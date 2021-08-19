@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6210EF826CDFB7900DEF70A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210EF726CDFB7900DEF70A /* AppDelegate.swift */; };
+		D6210EFA26CDFB7900DEF70A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210EF926CDFB7900DEF70A /* ViewController.swift */; };
+		D6210EFC26CDFB7A00DEF70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6210EFB26CDFB7A00DEF70A /* Assets.xcassets */; };
+		D6210EFF26CDFB7A00DEF70A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6210EFD26CDFB7A00DEF70A /* Main.storyboard */; };
+		D6210F0B26CDFB7A00DEF70A /* MouseHookSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F0A26CDFB7A00DEF70A /* MouseHookSampleTests.swift */; };
+		D6210F1626CDFB7A00DEF70A /* MouseHookSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6210F0726CDFB7A00DEF70A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6210EEC26CDFB7900DEF70A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6210EF326CDFB7900DEF70A;
+			remoteInfo = MouseHookSample;
+		};
+		D6210F1226CDFB7A00DEF70A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6210EEC26CDFB7900DEF70A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6210EF326CDFB7900DEF70A;
+			remoteInfo = MouseHookSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6210EF426CDFB7900DEF70A /* MouseHookSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseHookSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6210EF726CDFB7900DEF70A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6210EF926CDFB7900DEF70A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6210EFB26CDFB7A00DEF70A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6210EFE26CDFB7A00DEF70A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6210F0026CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6210F0126CDFB7A00DEF70A /* MouseHookSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MouseHookSample.entitlements; sourceTree = "<group>"; };
+		D6210F0626CDFB7A00DEF70A /* MouseHookSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseHookSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6210F0A26CDFB7A00DEF70A /* MouseHookSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookSampleTests.swift; sourceTree = "<group>"; };
+		D6210F0C26CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6210F1126CDFB7A00DEF70A /* MouseHookSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseHookSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookSampleUITests.swift; sourceTree = "<group>"; };
+		D6210F1726CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6210EF126CDFB7900DEF70A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6210F0326CDFB7A00DEF70A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6210F0E26CDFB7A00DEF70A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6210EEB26CDFB7900DEF70A = {
+			isa = PBXGroup;
+			children = (
+				D6210EF626CDFB7900DEF70A /* MouseHookSample */,
+				D6210F0926CDFB7A00DEF70A /* MouseHookSampleTests */,
+				D6210F1426CDFB7A00DEF70A /* MouseHookSampleUITests */,
+				D6210EF526CDFB7900DEF70A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6210EF526CDFB7900DEF70A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6210EF426CDFB7900DEF70A /* MouseHookSample.app */,
+				D6210F0626CDFB7A00DEF70A /* MouseHookSampleTests.xctest */,
+				D6210F1126CDFB7A00DEF70A /* MouseHookSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6210EF626CDFB7900DEF70A /* MouseHookSample */ = {
+			isa = PBXGroup;
+			children = (
+				D6210EF726CDFB7900DEF70A /* AppDelegate.swift */,
+				D6210EF926CDFB7900DEF70A /* ViewController.swift */,
+				D6210EFB26CDFB7A00DEF70A /* Assets.xcassets */,
+				D6210EFD26CDFB7A00DEF70A /* Main.storyboard */,
+				D6210F0026CDFB7A00DEF70A /* Info.plist */,
+				D6210F0126CDFB7A00DEF70A /* MouseHookSample.entitlements */,
+			);
+			path = MouseHookSample;
+			sourceTree = "<group>";
+		};
+		D6210F0926CDFB7A00DEF70A /* MouseHookSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6210F0A26CDFB7A00DEF70A /* MouseHookSampleTests.swift */,
+				D6210F0C26CDFB7A00DEF70A /* Info.plist */,
+			);
+			path = MouseHookSampleTests;
+			sourceTree = "<group>";
+		};
+		D6210F1426CDFB7A00DEF70A /* MouseHookSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */,
+				D6210F1726CDFB7A00DEF70A /* Info.plist */,
+			);
+			path = MouseHookSampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6210EF326CDFB7900DEF70A /* MouseHookSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6210F1A26CDFB7A00DEF70A /* Build configuration list for PBXNativeTarget "MouseHookSample" */;
+			buildPhases = (
+				D6210EF026CDFB7900DEF70A /* Sources */,
+				D6210EF126CDFB7900DEF70A /* Frameworks */,
+				D6210EF226CDFB7900DEF70A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MouseHookSample;
+			productName = MouseHookSample;
+			productReference = D6210EF426CDFB7900DEF70A /* MouseHookSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6210F0526CDFB7A00DEF70A /* MouseHookSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6210F1D26CDFB7A00DEF70A /* Build configuration list for PBXNativeTarget "MouseHookSampleTests" */;
+			buildPhases = (
+				D6210F0226CDFB7A00DEF70A /* Sources */,
+				D6210F0326CDFB7A00DEF70A /* Frameworks */,
+				D6210F0426CDFB7A00DEF70A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6210F0826CDFB7A00DEF70A /* PBXTargetDependency */,
+			);
+			name = MouseHookSampleTests;
+			productName = MouseHookSampleTests;
+			productReference = D6210F0626CDFB7A00DEF70A /* MouseHookSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6210F1026CDFB7A00DEF70A /* MouseHookSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6210F2026CDFB7A00DEF70A /* Build configuration list for PBXNativeTarget "MouseHookSampleUITests" */;
+			buildPhases = (
+				D6210F0D26CDFB7A00DEF70A /* Sources */,
+				D6210F0E26CDFB7A00DEF70A /* Frameworks */,
+				D6210F0F26CDFB7A00DEF70A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6210F1326CDFB7A00DEF70A /* PBXTargetDependency */,
+			);
+			name = MouseHookSampleUITests;
+			productName = MouseHookSampleUITests;
+			productReference = D6210F1126CDFB7A00DEF70A /* MouseHookSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6210EEC26CDFB7900DEF70A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D6210EF326CDFB7900DEF70A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D6210F0526CDFB7A00DEF70A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D6210EF326CDFB7900DEF70A;
+					};
+					D6210F1026CDFB7A00DEF70A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D6210EF326CDFB7900DEF70A;
+					};
+				};
+			};
+			buildConfigurationList = D6210EEF26CDFB7900DEF70A /* Build configuration list for PBXProject "MouseHookSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6210EEB26CDFB7900DEF70A;
+			productRefGroup = D6210EF526CDFB7900DEF70A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6210EF326CDFB7900DEF70A /* MouseHookSample */,
+				D6210F0526CDFB7A00DEF70A /* MouseHookSampleTests */,
+				D6210F1026CDFB7A00DEF70A /* MouseHookSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6210EF226CDFB7900DEF70A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6210EFC26CDFB7A00DEF70A /* Assets.xcassets in Resources */,
+				D6210EFF26CDFB7A00DEF70A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6210F0426CDFB7A00DEF70A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6210F0F26CDFB7A00DEF70A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6210EF026CDFB7900DEF70A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6210EFA26CDFB7900DEF70A /* ViewController.swift in Sources */,
+				D6210EF826CDFB7900DEF70A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6210F0226CDFB7A00DEF70A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6210F0B26CDFB7A00DEF70A /* MouseHookSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6210F0D26CDFB7A00DEF70A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6210F1626CDFB7A00DEF70A /* MouseHookSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6210F0826CDFB7A00DEF70A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6210EF326CDFB7900DEF70A /* MouseHookSample */;
+			targetProxy = D6210F0726CDFB7A00DEF70A /* PBXContainerItemProxy */;
+		};
+		D6210F1326CDFB7A00DEF70A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6210EF326CDFB7900DEF70A /* MouseHookSample */;
+			targetProxy = D6210F1226CDFB7A00DEF70A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6210EFD26CDFB7A00DEF70A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6210EFE26CDFB7A00DEF70A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6210F1826CDFB7A00DEF70A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6210F1926CDFB7A00DEF70A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D6210F1B26CDFB7A00DEF70A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MouseHookSample/MouseHookSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MouseHookSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D6210F1C26CDFB7A00DEF70A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MouseHookSample/MouseHookSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MouseHookSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D6210F1E26CDFB7A00DEF70A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				INFOPLIST_FILE = MouseHookSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseHookSample.app/Contents/MacOS/MouseHookSample";
+			};
+			name = Debug;
+		};
+		D6210F1F26CDFB7A00DEF70A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				INFOPLIST_FILE = MouseHookSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseHookSample.app/Contents/MacOS/MouseHookSample";
+			};
+			name = Release;
+		};
+		D6210F2126CDFB7A00DEF70A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				INFOPLIST_FILE = MouseHookSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MouseHookSample;
+			};
+			name = Debug;
+		};
+		D6210F2226CDFB7A00DEF70A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				INFOPLIST_FILE = MouseHookSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MouseHookSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6210EEF26CDFB7900DEF70A /* Build configuration list for PBXProject "MouseHookSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6210F1826CDFB7A00DEF70A /* Debug */,
+				D6210F1926CDFB7A00DEF70A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6210F1A26CDFB7A00DEF70A /* Build configuration list for PBXNativeTarget "MouseHookSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6210F1B26CDFB7A00DEF70A /* Debug */,
+				D6210F1C26CDFB7A00DEF70A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6210F1D26CDFB7A00DEF70A /* Build configuration list for PBXNativeTarget "MouseHookSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6210F1E26CDFB7A00DEF70A /* Debug */,
+				D6210F1F26CDFB7A00DEF70A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6210F2026CDFB7A00DEF70A /* Build configuration list for PBXNativeTarget "MouseHookSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6210F2126CDFB7A00DEF70A /* Debug */,
+				D6210F2226CDFB7A00DEF70A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6210EEC26CDFB7900DEF70A /* Project object */;
+}
