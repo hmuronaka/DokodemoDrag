@@ -12,7 +12,7 @@ import Cocoa
 
 class Logger {
     static func log(_ str: String) {
-        NSLog(str)
+//        NSLog(str)
     }
 }
 
