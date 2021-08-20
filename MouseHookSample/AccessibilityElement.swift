@@ -197,7 +197,7 @@ class AccessibilityElement {
         }
     }
     
-    private func getSize() -> CGSize? {
+    func getSize() -> CGSize? {
         return self.value(for: .size)
     }
     
