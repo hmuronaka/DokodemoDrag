@@ -14,6 +14,7 @@
 		D6210F0B26CDFB7A00DEF70A /* MouseHookSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F0A26CDFB7A00DEF70A /* MouseHookSampleTests.swift */; };
 		D6210F1626CDFB7A00DEF70A /* MouseHookSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */; };
 		D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */; };
+		D6F9F30D26CF95DF00F254BD /* StatusBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D6210F1726CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
 		D683DA9F26CF614D00B2B162 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				D6210F0026CDFB7A00DEF70A /* Info.plist */,
 				D6210F0126CDFB7A00DEF70A /* MouseHookSample.entitlements */,
 				D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */,
+				D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */,
 			);
 			path = MouseHookSample;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				D6210EFA26CDFB7900DEF70A /* ViewController.swift in Sources */,
 				D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */,
+				D6F9F30D26CF95DF00F254BD /* StatusBarItem.swift in Sources */,
 				D6210EF826CDFB7900DEF70A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
