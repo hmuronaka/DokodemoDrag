@@ -13,6 +13,7 @@
 		D6210EFF26CDFB7A00DEF70A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6210EFD26CDFB7A00DEF70A /* Main.storyboard */; };
 		D6210F0B26CDFB7A00DEF70A /* MouseHookSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F0A26CDFB7A00DEF70A /* MouseHookSampleTests.swift */; };
 		D6210F1626CDFB7A00DEF70A /* MouseHookSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */; };
+		D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		D6210F1126CDFB7A00DEF70A /* MouseHookSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseHookSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookSampleUITests.swift; sourceTree = "<group>"; };
 		D6210F1726CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
+		D683DA9F26CF614D00B2B162 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 				D6210F0926CDFB7A00DEF70A /* MouseHookSampleTests */,
 				D6210F1426CDFB7A00DEF70A /* MouseHookSampleUITests */,
 				D6210EF526CDFB7900DEF70A /* Products */,
+				D683DA9E26CF614D00B2B162 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +106,7 @@
 				D6210EFD26CDFB7A00DEF70A /* Main.storyboard */,
 				D6210F0026CDFB7A00DEF70A /* Info.plist */,
 				D6210F0126CDFB7A00DEF70A /* MouseHookSample.entitlements */,
+				D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */,
 			);
 			path = MouseHookSample;
 			sourceTree = "<group>";
@@ -122,6 +127,14 @@
 				D6210F1726CDFB7A00DEF70A /* Info.plist */,
 			);
 			path = MouseHookSampleUITests;
+			sourceTree = "<group>";
+		};
+		D683DA9E26CF614D00B2B162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D683DA9F26CF614D00B2B162 /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6210EFA26CDFB7900DEF70A /* ViewController.swift in Sources */,
+				D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */,
 				D6210EF826CDFB7900DEF70A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
