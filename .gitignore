@@ -24,3 +24,7 @@ DerivedData/
 
 ## Gcc Patch
 /*.gcno
+
+# SwiftPackageManager
+!**/Package.resolved
+#
