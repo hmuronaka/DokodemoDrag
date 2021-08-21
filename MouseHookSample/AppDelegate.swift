@@ -24,11 +24,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-
 }
 
 extension AppDelegate {
+    @IBAction func toggleIsLaunchOnLogin(_ item: NSMenuItem) {
+        item.state = item.state == .off ? .on : .off
+    }
+    
     private func checkLaunchOnLogin() {
         let running = NSWorkspace.shared.runningApplications
         let isRunning = !running.filter({$0.bundleIdentifier == AppDelegate.launcherAppId}).isEmpty

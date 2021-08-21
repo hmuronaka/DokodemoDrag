@@ -681,6 +681,13 @@
                 </customObject>
                 <menu id="ajO-tZ-lK0">
                     <items>
+                        <menuItem title="isLaunchOnLogin" id="CBD-uR-x03">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="toggleIsLaunchOnLogin:" target="Voe-Tx-rLC" id="v7V-d1-kHS"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="zhC-QQ-oKL"/>
                         <menuItem title="Quit WindowMover" keyEquivalent="q" id="vm1-dR-C61">
                             <connections>
                                 <action selector="terminate:" target="hnw-xV-0zn" id="o8U-7r-P0B"/>
