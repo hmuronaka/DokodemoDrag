@@ -50,10 +50,10 @@ class StatusBarItem {
     }
     
     private func refreshMenu() {
-        guard let menu = self.nsStatusItem?.menu else {
+        guard let menu = self.statusMenu else {
             return
         }
-        if let isLaunchOnLoginMenuItem = menu.item(withTitle: "isLaunchOnLoginMenuItem") {
+        if let isLaunchOnLoginMenuItem = menu.item(withTitle: "isLaunchOnLogin") {
             isLaunchOnLoginMenuItem.state = SettingService.shared.isLaunchOnLogin ? .on : .off
         }
     }
