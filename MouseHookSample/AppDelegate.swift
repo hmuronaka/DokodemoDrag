@@ -21,6 +21,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         StatusBarItem.instance.statusMenu = statusBarMenu
         StatusBarItem.instance.refreshVisibility()
         checkLaunchOnLogin()
+        
+        MouseHookService.shared.start()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
