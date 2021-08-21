@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D630526726CFDDAC00869734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630526626CFDDAC00869734 /* AppDelegate.swift */; };
+		D630526926CFDDAC00869734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630526826CFDDAC00869734 /* ViewController.swift */; };
+		D630526B26CFDDAF00869734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D630526A26CFDDAF00869734 /* Assets.xcassets */; };
+		D630526E26CFDDAF00869734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D630526C26CFDDAF00869734 /* Main.storyboard */; };
+		D630527A26CFDDAF00869734 /* MouseHookSampleLauncherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630527926CFDDAF00869734 /* MouseHookSampleLauncherTests.swift */; };
+		D630528526CFDDAF00869734 /* MouseHookSampleLauncherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630528426CFDDAF00869734 /* MouseHookSampleLauncherUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D630527626CFDDAF00869734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D630525B26CFDDAC00869734 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D630526226CFDDAC00869734;
+			remoteInfo = MouseHookSampleLauncher;
+		};
+		D630528126CFDDAF00869734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D630525B26CFDDAC00869734 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D630526226CFDDAC00869734;
+			remoteInfo = MouseHookSampleLauncher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D630526326CFDDAC00869734 /* MouseHookSampleLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseHookSampleLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D630526626CFDDAC00869734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D630526826CFDDAC00869734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D630526A26CFDDAF00869734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D630526D26CFDDAF00869734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D630526F26CFDDAF00869734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D630527026CFDDAF00869734 /* MouseHookSampleLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MouseHookSampleLauncher.entitlements; sourceTree = "<group>"; };
+		D630527526CFDDAF00869734 /* MouseHookSampleLauncherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseHookSampleLauncherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D630527926CFDDAF00869734 /* MouseHookSampleLauncherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookSampleLauncherTests.swift; sourceTree = "<group>"; };
+		D630527B26CFDDAF00869734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D630528026CFDDAF00869734 /* MouseHookSampleLauncherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseHookSampleLauncherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D630528426CFDDAF00869734 /* MouseHookSampleLauncherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookSampleLauncherUITests.swift; sourceTree = "<group>"; };
+		D630528626CFDDAF00869734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D630526026CFDDAC00869734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D630527226CFDDAF00869734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D630527D26CFDDAF00869734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D630525A26CFDDAC00869734 = {
+			isa = PBXGroup;
+			children = (
+				D630526526CFDDAC00869734 /* MouseHookSampleLauncher */,
+				D630527826CFDDAF00869734 /* MouseHookSampleLauncherTests */,
+				D630528326CFDDAF00869734 /* MouseHookSampleLauncherUITests */,
+				D630526426CFDDAC00869734 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D630526426CFDDAC00869734 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D630526326CFDDAC00869734 /* MouseHookSampleLauncher.app */,
+				D630527526CFDDAF00869734 /* MouseHookSampleLauncherTests.xctest */,
+				D630528026CFDDAF00869734 /* MouseHookSampleLauncherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D630526526CFDDAC00869734 /* MouseHookSampleLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				D630526626CFDDAC00869734 /* AppDelegate.swift */,
+				D630526826CFDDAC00869734 /* ViewController.swift */,
+				D630526A26CFDDAF00869734 /* Assets.xcassets */,
+				D630526C26CFDDAF00869734 /* Main.storyboard */,
+				D630526F26CFDDAF00869734 /* Info.plist */,
+				D630527026CFDDAF00869734 /* MouseHookSampleLauncher.entitlements */,
+			);
+			path = MouseHookSampleLauncher;
+			sourceTree = "<group>";
+		};
+		D630527826CFDDAF00869734 /* MouseHookSampleLauncherTests */ = {
+			isa = PBXGroup;
+			children = (
+				D630527926CFDDAF00869734 /* MouseHookSampleLauncherTests.swift */,
+				D630527B26CFDDAF00869734 /* Info.plist */,
+			);
+			path = MouseHookSampleLauncherTests;
+			sourceTree = "<group>";
+		};
+		D630528326CFDDAF00869734 /* MouseHookSampleLauncherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D630528426CFDDAF00869734 /* MouseHookSampleLauncherUITests.swift */,
+				D630528626CFDDAF00869734 /* Info.plist */,
+			);
+			path = MouseHookSampleLauncherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D630526226CFDDAC00869734 /* MouseHookSampleLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D630528926CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncher" */;
+			buildPhases = (
+				D630525F26CFDDAC00869734 /* Sources */,
+				D630526026CFDDAC00869734 /* Frameworks */,
+				D630526126CFDDAC00869734 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MouseHookSampleLauncher;
+			productName = MouseHookSampleLauncher;
+			productReference = D630526326CFDDAC00869734 /* MouseHookSampleLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D630527426CFDDAF00869734 /* MouseHookSampleLauncherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D630528C26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncherTests" */;
+			buildPhases = (
+				D630527126CFDDAF00869734 /* Sources */,
+				D630527226CFDDAF00869734 /* Frameworks */,
+				D630527326CFDDAF00869734 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D630527726CFDDAF00869734 /* PBXTargetDependency */,
+			);
+			name = MouseHookSampleLauncherTests;
+			productName = MouseHookSampleLauncherTests;
+			productReference = D630527526CFDDAF00869734 /* MouseHookSampleLauncherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D630527F26CFDDAF00869734 /* MouseHookSampleLauncherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D630528F26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncherUITests" */;
+			buildPhases = (
+				D630527C26CFDDAF00869734 /* Sources */,
+				D630527D26CFDDAF00869734 /* Frameworks */,
+				D630527E26CFDDAF00869734 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D630528226CFDDAF00869734 /* PBXTargetDependency */,
+			);
+			name = MouseHookSampleLauncherUITests;
+			productName = MouseHookSampleLauncherUITests;
+			productReference = D630528026CFDDAF00869734 /* MouseHookSampleLauncherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D630525B26CFDDAC00869734 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D630526226CFDDAC00869734 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D630527426CFDDAF00869734 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D630526226CFDDAC00869734;
+					};
+					D630527F26CFDDAF00869734 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D630526226CFDDAC00869734;
+					};
+				};
+			};
+			buildConfigurationList = D630525E26CFDDAC00869734 /* Build configuration list for PBXProject "MouseHookSampleLauncher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D630525A26CFDDAC00869734;
+			productRefGroup = D630526426CFDDAC00869734 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D630526226CFDDAC00869734 /* MouseHookSampleLauncher */,
+				D630527426CFDDAF00869734 /* MouseHookSampleLauncherTests */,
+				D630527F26CFDDAF00869734 /* MouseHookSampleLauncherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D630526126CFDDAC00869734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D630526B26CFDDAF00869734 /* Assets.xcassets in Resources */,
+				D630526E26CFDDAF00869734 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D630527326CFDDAF00869734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D630527E26CFDDAF00869734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D630525F26CFDDAC00869734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D630526926CFDDAC00869734 /* ViewController.swift in Sources */,
+				D630526726CFDDAC00869734 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D630527126CFDDAF00869734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D630527A26CFDDAF00869734 /* MouseHookSampleLauncherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D630527C26CFDDAF00869734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D630528526CFDDAF00869734 /* MouseHookSampleLauncherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D630527726CFDDAF00869734 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D630526226CFDDAC00869734 /* MouseHookSampleLauncher */;
+			targetProxy = D630527626CFDDAF00869734 /* PBXContainerItemProxy */;
+		};
+		D630528226CFDDAF00869734 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D630526226CFDDAC00869734 /* MouseHookSampleLauncher */;
+			targetProxy = D630528126CFDDAF00869734 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D630526C26CFDDAF00869734 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D630526D26CFDDAF00869734 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D630528726CFDDAF00869734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D630528826CFDDAF00869734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D630528A26CFDDAF00869734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MouseHookSampleLauncher/MouseHookSampleLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MouseHookSampleLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D630528B26CFDDAF00869734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MouseHookSampleLauncher/MouseHookSampleLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MouseHookSampleLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D630528D26CFDDAF00869734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				INFOPLIST_FILE = MouseHookSampleLauncherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleLauncherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseHookSampleLauncher.app/Contents/MacOS/MouseHookSampleLauncher";
+			};
+			name = Debug;
+		};
+		D630528E26CFDDAF00869734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				INFOPLIST_FILE = MouseHookSampleLauncherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleLauncherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseHookSampleLauncher.app/Contents/MacOS/MouseHookSampleLauncher";
+			};
+			name = Release;
+		};
+		D630529026CFDDAF00869734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				INFOPLIST_FILE = MouseHookSampleLauncherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleLauncherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MouseHookSampleLauncher;
+			};
+			name = Debug;
+		};
+		D630529126CFDDAF00869734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C3BE3ZYRWA;
+				INFOPLIST_FILE = MouseHookSampleLauncherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleLauncherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MouseHookSampleLauncher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D630525E26CFDDAC00869734 /* Build configuration list for PBXProject "MouseHookSampleLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D630528726CFDDAF00869734 /* Debug */,
+				D630528826CFDDAF00869734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D630528926CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D630528A26CFDDAF00869734 /* Debug */,
+				D630528B26CFDDAF00869734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D630528C26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D630528D26CFDDAF00869734 /* Debug */,
+				D630528E26CFDDAF00869734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D630528F26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D630529026CFDDAF00869734 /* Debug */,
+				D630529126CFDDAF00869734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D630525B26CFDDAC00869734 /* Project object */;
+}
