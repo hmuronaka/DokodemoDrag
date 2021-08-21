@@ -14,6 +14,7 @@
 		D6210F0B26CDFB7A00DEF70A /* MouseHookSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F0A26CDFB7A00DEF70A /* MouseHookSampleTests.swift */; };
 		D6210F1626CDFB7A00DEF70A /* MouseHookSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */; };
 		D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */; };
+		D6A21F8E26CFE74A00FC046E /* MouseHookSampleLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = D663C21326CFE4110026A77B /* MouseHookSampleLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D6F9F30D26CF95DF00F254BD /* StatusBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D6A21F8D26CFE73100FC046E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				D6A21F8E26CFE74A00FC046E /* MouseHookSampleLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D6210EF426CDFB7900DEF70A /* MouseHookSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseHookSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6210EF726CDFB7900DEF70A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +62,7 @@
 		D6210F1126CDFB7A00DEF70A /* MouseHookSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseHookSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookSampleUITests.swift; sourceTree = "<group>"; };
 		D6210F1726CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D663C21326CFE4110026A77B /* MouseHookSampleLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MouseHookSampleLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
 		D683DA9F26CF614D00B2B162 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarItem.swift; sourceTree = "<group>"; };
@@ -135,6 +150,7 @@
 		D683DA9E26CF614D00B2B162 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D663C21326CFE4110026A77B /* MouseHookSampleLauncher.app */,
 				D683DA9F26CF614D00B2B162 /* ServiceManagement.framework */,
 			);
 			name = Frameworks;
@@ -150,6 +166,7 @@
 				D6210EF026CDFB7900DEF70A /* Sources */,
 				D6210EF126CDFB7900DEF70A /* Frameworks */,
 				D6210EF226CDFB7900DEF70A /* Resources */,
+				D6A21F8D26CFE73100FC046E /* CopyFiles */,
 			);
 			buildRules = (
 			);
