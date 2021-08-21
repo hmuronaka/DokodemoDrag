@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		D6210F1626CDFB7A00DEF70A /* MouseHookSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */; };
 		D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */; };
 		D6A21F8E26CFE74A00FC046E /* MouseHookSampleLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = D663C21326CFE4110026A77B /* MouseHookSampleLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6D8BA2E26D0932500F0D9EF /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = D6D8BA2D26D0932500F0D9EF /* Defaults */; };
+		D6D8BA3226D0941800F0D9EF /* SettingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D8BA3126D0941800F0D9EF /* SettingService.swift */; };
 		D6F9F30D26CF95DF00F254BD /* StatusBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,7 @@
 		D663C21326CFE4110026A77B /* MouseHookSampleLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MouseHookSampleLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
 		D683DA9F26CF614D00B2B162 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		D6D8BA3126D0941800F0D9EF /* SettingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingService.swift; sourceTree = "<group>"; };
 		D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D8BA2E26D0932500F0D9EF /* Defaults in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +129,7 @@
 				D6210F0126CDFB7A00DEF70A /* MouseHookSample.entitlements */,
 				D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */,
 				D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */,
+				D6D8BA3126D0941800F0D9EF /* SettingService.swift */,
 			);
 			path = MouseHookSample;
 			sourceTree = "<group>";
@@ -173,6 +178,9 @@
 			dependencies = (
 			);
 			name = MouseHookSample;
+			packageProductDependencies = (
+				D6D8BA2D26D0932500F0D9EF /* Defaults */,
+			);
 			productName = MouseHookSample;
 			productReference = D6210EF426CDFB7900DEF70A /* MouseHookSample.app */;
 			productType = "com.apple.product-type.application";
@@ -244,6 +252,9 @@
 				Base,
 			);
 			mainGroup = D6210EEB26CDFB7900DEF70A;
+			packageReferences = (
+				D6D8BA2C26D0932500F0D9EF /* XCRemoteSwiftPackageReference "Defaults" */,
+			);
 			productRefGroup = D6210EF526CDFB7900DEF70A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D8BA3226D0941800F0D9EF /* SettingService.swift in Sources */,
 				D6210EFA26CDFB7900DEF70A /* ViewController.swift in Sources */,
 				D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */,
 				D6F9F30D26CF95DF00F254BD /* StatusBarItem.swift in Sources */,
@@ -617,6 +629,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6D8BA2C26D0932500F0D9EF /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6D8BA2D26D0932500F0D9EF /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6D8BA2C26D0932500F0D9EF /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D6210EEC26CDFB7900DEF70A /* Project object */;
 }

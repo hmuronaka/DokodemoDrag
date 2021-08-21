@@ -14,6 +14,7 @@ class StatusBarItem {
     public var statusMenu: NSMenu? {
         didSet {
             nsStatusItem?.menu = statusMenu
+            refreshMenu()
         }
     }
     
@@ -46,5 +47,14 @@ class StatusBarItem {
         added = false
         guard let nsStatusItem = nsStatusItem else { return }
         NSStatusBar.system.removeStatusItem(nsStatusItem)
+    }
+    
+    private func refreshMenu() {
+        guard let menu = self.statusMenu else {
+            return
+        }
+        if let isLaunchOnLoginMenuItem = menu.item(withTitle: "isLaunchOnLogin") {
+            isLaunchOnLoginMenuItem.state = SettingService.shared.isLaunchOnLogin ? .on : .off
+        }
     }
 }
