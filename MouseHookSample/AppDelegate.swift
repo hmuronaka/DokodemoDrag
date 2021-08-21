@@ -8,6 +8,8 @@
 import Cocoa
 import ServiceManagement
 import os.log
+import Defaults
+
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
     static let launcherAppId = "hmu.MouseHookSampleLauncher"
@@ -28,7 +30,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 extension AppDelegate {
     @IBAction func toggleIsLaunchOnLogin(_ item: NSMenuItem) {
-        item.state = item.state == .off ? .on : .off
+        let newSetting = SettingService.shared.toggleLaunchOnLogin()
+        item.state = newSetting ? .on : .off
     }
     
     private func checkLaunchOnLogin() {
@@ -43,15 +46,9 @@ extension AppDelegate {
 //        }
         
         // Even if we are already set up to launch on login, setting it again since macOS can be buggy with this type of launch on login.
-//        if Defaults.launchOnLogin.enabled {
-            let smLoginSuccess = SMLoginItemSetEnabled(AppDelegate.launcherAppId as CFString, true)
-            if !smLoginSuccess {
-                if #available(OSX 10.12, *) {
-                    os_log("Unable to enable launch at login. Attempting one more time.", type: .info)
-                }
-                SMLoginItemSetEnabled(AppDelegate.launcherAppId as CFString, true)
-            }
-        //}
+        if SettingService.shared.isLaunchOnLogin {
+            SettingService.shared.setEnableLaunchOnLogin(enabled: true)
+        }
     }
 }
 
