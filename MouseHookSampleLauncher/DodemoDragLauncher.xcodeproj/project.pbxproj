@@ -11,7 +11,7 @@
 		D630526926CFDDAC00869734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630526826CFDDAC00869734 /* ViewController.swift */; };
 		D630526B26CFDDAF00869734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D630526A26CFDDAF00869734 /* Assets.xcassets */; };
 		D630526E26CFDDAF00869734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D630526C26CFDDAF00869734 /* Main.storyboard */; };
-		D630527A26CFDDAF00869734 /* DokodemoDragLauncherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630527926CFDDAF00869734 /* DokodemoDragLauncherTests.swift */; };
+		D630527A26CFDDAF00869734 /* MouseHookSampleLauncherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630527926CFDDAF00869734 /* MouseHookSampleLauncherTests.swift */; };
 		D630528526CFDDAF00869734 /* MouseHookSampleLauncherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630528426CFDDAF00869734 /* MouseHookSampleLauncherUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,17 +33,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D630526326CFDDAC00869734 /* DokodemoDragLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DokodemoDragLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D630526326CFDDAC00869734 /* MouseHookSampleLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseHookSampleLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D630526626CFDDAC00869734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D630526826CFDDAC00869734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D630526A26CFDDAF00869734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D630526D26CFDDAF00869734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D630526F26CFDDAF00869734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D630527026CFDDAF00869734 /* DokodemoDragLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DokodemoDragLauncher.entitlements; sourceTree = "<group>"; };
-		D630527526CFDDAF00869734 /* DokodemoDragLauncherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DokodemoDragLauncherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D630527926CFDDAF00869734 /* DokodemoDragLauncherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokodemoDragLauncherTests.swift; sourceTree = "<group>"; };
+		D630527026CFDDAF00869734 /* MouseHookSampleLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MouseHookSampleLauncher.entitlements; sourceTree = "<group>"; };
+		D630527526CFDDAF00869734 /* MouseHookSampleLauncherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseHookSampleLauncherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D630527926CFDDAF00869734 /* MouseHookSampleLauncherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookSampleLauncherTests.swift; sourceTree = "<group>"; };
 		D630527B26CFDDAF00869734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D630528026CFDDAF00869734 /* DokodemoDragLauncherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DokodemoDragLauncherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D630528026CFDDAF00869734 /* MouseHookSampleLauncherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseHookSampleLauncherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D630528426CFDDAF00869734 /* MouseHookSampleLauncherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookSampleLauncherUITests.swift; sourceTree = "<group>"; };
 		D630528626CFDDAF00869734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,9 +76,9 @@
 		D630525A26CFDDAC00869734 = {
 			isa = PBXGroup;
 			children = (
-				D630526526CFDDAC00869734 /* DokodemoDragLauncher */,
-				D630527826CFDDAF00869734 /* DokodemoDragLauncherTests */,
-				D630528326CFDDAF00869734 /* DokodemoDragLauncherUITests */,
+				D630526526CFDDAC00869734 /* MouseHookSampleLauncher */,
+				D630527826CFDDAF00869734 /* MouseHookSampleLauncherTests */,
+				D630528326CFDDAF00869734 /* MouseHookSampleLauncherUITests */,
 				D630526426CFDDAC00869734 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,14 +86,14 @@
 		D630526426CFDDAC00869734 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D630526326CFDDAC00869734 /* DokodemoDragLauncher.app */,
-				D630527526CFDDAF00869734 /* DokodemoDragLauncherTests.xctest */,
-				D630528026CFDDAF00869734 /* DokodemoDragLauncherUITests.xctest */,
+				D630526326CFDDAC00869734 /* MouseHookSampleLauncher.app */,
+				D630527526CFDDAF00869734 /* MouseHookSampleLauncherTests.xctest */,
+				D630528026CFDDAF00869734 /* MouseHookSampleLauncherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D630526526CFDDAC00869734 /* DokodemoDragLauncher */ = {
+		D630526526CFDDAC00869734 /* MouseHookSampleLauncher */ = {
 			isa = PBXGroup;
 			children = (
 				D630526626CFDDAC00869734 /* AppDelegate.swift */,
@@ -101,35 +101,35 @@
 				D630526A26CFDDAF00869734 /* Assets.xcassets */,
 				D630526C26CFDDAF00869734 /* Main.storyboard */,
 				D630526F26CFDDAF00869734 /* Info.plist */,
-				D630527026CFDDAF00869734 /* DokodemoDragLauncher.entitlements */,
+				D630527026CFDDAF00869734 /* MouseHookSampleLauncher.entitlements */,
 			);
-			path = DokodemoDragLauncher;
+			path = MouseHookSampleLauncher;
 			sourceTree = "<group>";
 		};
-		D630527826CFDDAF00869734 /* DokodemoDragLauncherTests */ = {
+		D630527826CFDDAF00869734 /* MouseHookSampleLauncherTests */ = {
 			isa = PBXGroup;
 			children = (
-				D630527926CFDDAF00869734 /* DokodemoDragLauncherTests.swift */,
+				D630527926CFDDAF00869734 /* MouseHookSampleLauncherTests.swift */,
 				D630527B26CFDDAF00869734 /* Info.plist */,
 			);
-			path = DokodemoDragLauncherTests;
+			path = MouseHookSampleLauncherTests;
 			sourceTree = "<group>";
 		};
-		D630528326CFDDAF00869734 /* DokodemoDragLauncherUITests */ = {
+		D630528326CFDDAF00869734 /* MouseHookSampleLauncherUITests */ = {
 			isa = PBXGroup;
 			children = (
 				D630528426CFDDAF00869734 /* MouseHookSampleLauncherUITests.swift */,
 				D630528626CFDDAF00869734 /* Info.plist */,
 			);
-			path = DokodemoDragLauncherUITests;
+			path = MouseHookSampleLauncherUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D630526226CFDDAC00869734 /* DokodemoDragLauncher */ = {
+		D630526226CFDDAC00869734 /* MouseHookSampleLauncher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D630528926CFDDAF00869734 /* Build configuration list for PBXNativeTarget "DokodemoDragLauncher" */;
+			buildConfigurationList = D630528926CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncher" */;
 			buildPhases = (
 				D630525F26CFDDAC00869734 /* Sources */,
 				D630526026CFDDAC00869734 /* Frameworks */,
@@ -139,14 +139,14 @@
 			);
 			dependencies = (
 			);
-			name = DokodemoDragLauncher;
+			name = MouseHookSampleLauncher;
 			productName = MouseHookSampleLauncher;
-			productReference = D630526326CFDDAC00869734 /* DokodemoDragLauncher.app */;
+			productReference = D630526326CFDDAC00869734 /* MouseHookSampleLauncher.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D630527426CFDDAF00869734 /* DokodemoDragLauncherTests */ = {
+		D630527426CFDDAF00869734 /* MouseHookSampleLauncherTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D630528C26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "DokodemoDragLauncherTests" */;
+			buildConfigurationList = D630528C26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncherTests" */;
 			buildPhases = (
 				D630527126CFDDAF00869734 /* Sources */,
 				D630527226CFDDAF00869734 /* Frameworks */,
@@ -157,14 +157,14 @@
 			dependencies = (
 				D630527726CFDDAF00869734 /* PBXTargetDependency */,
 			);
-			name = DokodemoDragLauncherTests;
+			name = MouseHookSampleLauncherTests;
 			productName = MouseHookSampleLauncherTests;
-			productReference = D630527526CFDDAF00869734 /* DokodemoDragLauncherTests.xctest */;
+			productReference = D630527526CFDDAF00869734 /* MouseHookSampleLauncherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D630527F26CFDDAF00869734 /* DokodemoDragLauncherUITests */ = {
+		D630527F26CFDDAF00869734 /* MouseHookSampleLauncherUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D630528F26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "DokodemoDragLauncherUITests" */;
+			buildConfigurationList = D630528F26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncherUITests" */;
 			buildPhases = (
 				D630527C26CFDDAF00869734 /* Sources */,
 				D630527D26CFDDAF00869734 /* Frameworks */,
@@ -175,9 +175,9 @@
 			dependencies = (
 				D630528226CFDDAF00869734 /* PBXTargetDependency */,
 			);
-			name = DokodemoDragLauncherUITests;
+			name = MouseHookSampleLauncherUITests;
 			productName = MouseHookSampleLauncherUITests;
-			productReference = D630528026CFDDAF00869734 /* DokodemoDragLauncherUITests.xctest */;
+			productReference = D630528026CFDDAF00869734 /* MouseHookSampleLauncherUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -202,7 +202,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D630525E26CFDDAC00869734 /* Build configuration list for PBXProject "DokodemoDragLauncher" */;
+			buildConfigurationList = D630525E26CFDDAC00869734 /* Build configuration list for PBXProject "MouseHookSampleLauncher" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,9 +215,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D630526226CFDDAC00869734 /* DokodemoDragLauncher */,
-				D630527426CFDDAF00869734 /* DokodemoDragLauncherTests */,
-				D630527F26CFDDAF00869734 /* DokodemoDragLauncherUITests */,
+				D630526226CFDDAC00869734 /* MouseHookSampleLauncher */,
+				D630527426CFDDAF00869734 /* MouseHookSampleLauncherTests */,
+				D630527F26CFDDAF00869734 /* MouseHookSampleLauncherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D630527A26CFDDAF00869734 /* DokodemoDragLauncherTests.swift in Sources */,
+				D630527A26CFDDAF00869734 /* MouseHookSampleLauncherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,12 +279,12 @@
 /* Begin PBXTargetDependency section */
 		D630527726CFDDAF00869734 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D630526226CFDDAC00869734 /* DokodemoDragLauncher */;
+			target = D630526226CFDDAC00869734 /* MouseHookSampleLauncher */;
 			targetProxy = D630527626CFDDAF00869734 /* PBXContainerItemProxy */;
 		};
 		D630528226CFDDAF00869734 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D630526226CFDDAC00869734 /* DokodemoDragLauncher */;
+			target = D630526226CFDDAC00869734 /* MouseHookSampleLauncher */;
 			targetProxy = D630528126CFDDAF00869734 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -478,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleLauncherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DokodemoDragLauncher.app/Contents/MacOS/DokodemoDragLauncher";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseHookSampleLauncher.app/Contents/MacOS/MouseHookSampleLauncher";
 			};
 			name = Debug;
 		};
@@ -500,7 +500,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleLauncherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DokodemoDragLauncher.app/Contents/MacOS/DokodemoDragLauncher";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseHookSampleLauncher.app/Contents/MacOS/MouseHookSampleLauncher";
 			};
 			name = Release;
 		};
@@ -547,7 +547,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D630525E26CFDDAC00869734 /* Build configuration list for PBXProject "DokodemoDragLauncher" */ = {
+		D630525E26CFDDAC00869734 /* Build configuration list for PBXProject "MouseHookSampleLauncher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D630528726CFDDAF00869734 /* Debug */,
@@ -556,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D630528926CFDDAF00869734 /* Build configuration list for PBXNativeTarget "DokodemoDragLauncher" */ = {
+		D630528926CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D630528A26CFDDAF00869734 /* Debug */,
@@ -565,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D630528C26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "DokodemoDragLauncherTests" */ = {
+		D630528C26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncherTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D630528D26CFDDAF00869734 /* Debug */,
@@ -574,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D630528F26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "DokodemoDragLauncherUITests" */ = {
+		D630528F26CFDDAF00869734 /* Build configuration list for PBXNativeTarget "MouseHookSampleLauncherUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D630529026CFDDAF00869734 /* Debug */,

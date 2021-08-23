@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MouseHookSampleLauncher/MouseHookSampleLauncher.xcodeproj">
+      location = "group:/Users/hmu/src/mac/MouseHookSample/MouseHookSampleLauncher/DokodemoDragLauncher.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:MouseHookSample.xcodeproj">
+      location = "group:/Users/hmu/src/mac/MouseHookSample/DokodemoDrag.xcodeproj">
    </FileRef>
 </Workspace>
