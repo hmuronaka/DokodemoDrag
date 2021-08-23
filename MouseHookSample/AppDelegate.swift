@@ -36,6 +36,11 @@ extension AppDelegate {
         item.state = newSetting ? .on : .off
     }
     
+    @IBAction func toggleIsEnable(_ item: NSMenuItem) {
+        let newSetting = SettingService.shared.toggleIsEnable()
+        item.title = newSetting ? "無効にする" : "有効にする"
+    }
+    
     private func checkLaunchOnLogin() {
         let running = NSWorkspace.shared.runningApplications
         let isRunning = !running.filter({$0.bundleIdentifier == AppDelegate.launcherAppId}).isEmpty

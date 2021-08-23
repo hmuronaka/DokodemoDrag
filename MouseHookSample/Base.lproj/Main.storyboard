@@ -681,6 +681,11 @@
                 </customObject>
                 <menu id="ajO-tZ-lK0">
                     <items>
+                        <menuItem title="enable" tag="20" keyEquivalent="q" id="NzX-rl-TBW">
+                            <connections>
+                                <action selector="toggleIsEnable:" target="Voe-Tx-rLC" id="qkU-f0-vKi"/>
+                            </connections>
+                        </menuItem>
                         <menuItem title="isLaunchOnLogin" id="CBD-uR-x03">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>

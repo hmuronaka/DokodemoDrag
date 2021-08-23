@@ -7,6 +7,10 @@
 
 import Cocoa
 
+enum StatusBarMenuItemTag: Int {
+    case enableOrDisable = 20
+}
+
 class StatusBarItem {
     static let instance = StatusBarItem()
     private var nsStatusItem: NSStatusItem?
@@ -55,6 +59,10 @@ class StatusBarItem {
         }
         if let isLaunchOnLoginMenuItem = menu.item(withTitle: "isLaunchOnLogin") {
             isLaunchOnLoginMenuItem.state = SettingService.shared.isLaunchOnLogin ? .on : .off
+        }
+        
+        if let isEnableMenuItem = menu.item(withTag: StatusBarMenuItemTag.enableOrDisable.rawValue) {
+            isEnableMenuItem.title = SettingService.shared.isEnable ? "無効にする" : "有効にする"
         }
     }
 }
