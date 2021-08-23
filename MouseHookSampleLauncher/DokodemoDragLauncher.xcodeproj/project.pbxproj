@@ -421,18 +421,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MouseHookSampleLauncher/MouseHookSampleLauncher.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DokodemoDragLauncher/DokodemoDragLauncher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = MouseHookSampleLauncher/Info.plist;
+				INFOPLIST_FILE = DokodemoDragLauncher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.2;
-				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleLauncher;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.dokodemodraglauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -443,18 +443,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MouseHookSampleLauncher/MouseHookSampleLauncher.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DokodemoDragLauncher/DokodemoDragLauncher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = MouseHookSampleLauncher/Info.plist;
+				INFOPLIST_FILE = DokodemoDragLauncher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.2;
-				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleLauncher;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.dokodemodraglauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
