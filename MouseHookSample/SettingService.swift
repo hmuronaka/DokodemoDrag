@@ -17,6 +17,10 @@ class SettingService {
         return Defaults[.isLaunchOnLogin]
     }
     
+    public var isEnable: Bool {
+        return Defaults[.isEnable]
+    }
+    
     private init() {
     }
     
@@ -35,8 +39,20 @@ class SettingService {
         return newSetting
     }
     
+    public func toggleIsEnable() -> Bool {
+        let newSetting = !self.isEnable
+        if newSetting {
+            MouseHookService.shared.start()
+        } else {
+            MouseHookService.shared.stop()
+        }
+        Defaults[.isEnable] = newSetting
+        return newSetting
+    }
+    
 }
 
 fileprivate extension Defaults.Keys {
     static let isLaunchOnLogin = Key<Bool>("isLaunchOnLogin", default: false)
+    static let isEnable = Key<Bool>("isEnable", default: true)
 }

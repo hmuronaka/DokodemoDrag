@@ -18,6 +18,8 @@ class MouseHookService {
     }
     
     public func start() {
+        stop()
+        
         eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: [.leftMouseDown, .leftMouseDragged, .leftMouseUp]) { event in
             self.handleMouseEvent(event)
         }
@@ -26,6 +28,9 @@ class MouseHookService {
     public func stop() {
         guard let eventMonitor = eventMonitor else { return }
         NSEvent.removeMonitor(eventMonitor)
+        
+        self.eventMonitor = nil
+        self.element = nil
     }
 
     private func handleMouseEvent(_ event: NSEvent) {
