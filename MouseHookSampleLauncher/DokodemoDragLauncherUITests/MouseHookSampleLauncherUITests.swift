@@ -1,13 +1,13 @@
 //
-//  MouseHookSampleLauncherUITests.swift
-//  MouseHookSampleLauncherUITests
+//  DokodemoDragLauncherUITests.swift
+//  DokodemoDragLauncherUITests
 //
 //  Created by MuronakaHiroaki on 2021/08/20.
 //
 
 import XCTest
 
-class MouseHookSampleLauncherUITests: XCTestCase {
+class DokodemoDragLauncherUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

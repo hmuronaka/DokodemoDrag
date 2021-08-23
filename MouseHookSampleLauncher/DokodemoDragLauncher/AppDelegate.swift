@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MouseHookSampleLauncher
+//  DokodemoDragLauncher
 //
 //  Created by MuronakaHiroaki on 2021/08/20.
 //
@@ -11,7 +11,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let mainAppIdentifier = "hmu.MouseHookSample"
+        let mainAppIdentifier = "hmu.DokodemoDrag"
         let running = NSWorkspace.shared.runningApplications
         let isRunning = !running.filter({$0.bundleIdentifier == mainAppIdentifier}).isEmpty
         
@@ -29,7 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             components.removeLast()
             components.removeLast()
             components.append("MacOS")
-            components.append("MouseHookSample")
+            components.append("DokodemoDrag")
             let newPath = NSString.path(withComponents: components)
             NSWorkspace.shared.launchApplication(newPath)
         }

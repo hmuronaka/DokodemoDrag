@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MouseHookSample
+//  DokodemoDrag
 //
 //  Created by MuronakaHiroaki on 2021/08/19.
 //
@@ -12,7 +12,7 @@ import Defaults
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
-    static let launcherAppId = "hmu.MouseHookSampleLauncher"
+    static let launcherAppId = "hmu.DokodemoDragLauncher"
     @IBOutlet var statusBarMenu: NSMenu!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {

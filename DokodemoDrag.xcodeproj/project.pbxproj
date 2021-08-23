@@ -12,7 +12,7 @@
 		D6210EFC26CDFB7A00DEF70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6210EFB26CDFB7A00DEF70A /* Assets.xcassets */; };
 		D6210EFF26CDFB7A00DEF70A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6210EFD26CDFB7A00DEF70A /* Main.storyboard */; };
 		D6210F0B26CDFB7A00DEF70A /* DokodemoDragTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F0A26CDFB7A00DEF70A /* DokodemoDragTests.swift */; };
-		D6210F1626CDFB7A00DEF70A /* MouseHookSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */; };
+		D6210F1626CDFB7A00DEF70A /* DokodemoDragUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F1526CDFB7A00DEF70A /* DokodemoDragUITests.swift */; };
 		D63A957226D12F8800F2E2BC /* MouseHookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63A957126D12F8800F2E2BC /* MouseHookService.swift */; };
 		D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */; };
 		D69DAD4C26D39128000E529D /* DokodemoDragLauncher.app in Resources */ = {isa = PBXBuildFile; fileRef = D69DAD4B26D39128000E529D /* DokodemoDragLauncher.app */; };
@@ -28,14 +28,14 @@
 			containerPortal = D6210EEC26CDFB7900DEF70A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D6210EF326CDFB7900DEF70A;
-			remoteInfo = MouseHookSample;
+			remoteInfo = DokodemoDrag;
 		};
 		D6210F1226CDFB7A00DEF70A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D6210EEC26CDFB7900DEF70A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D6210EF326CDFB7900DEF70A;
-			remoteInfo = MouseHookSample;
+			remoteInfo = DokodemoDrag;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -64,7 +64,7 @@
 		D6210F0A26CDFB7A00DEF70A /* DokodemoDragTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokodemoDragTests.swift; sourceTree = "<group>"; };
 		D6210F0C26CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6210F1126CDFB7A00DEF70A /* DokodemoDragUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DokodemoDragUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookSampleUITests.swift; sourceTree = "<group>"; };
+		D6210F1526CDFB7A00DEF70A /* DokodemoDragUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokodemoDragUITests.swift; sourceTree = "<group>"; };
 		D6210F1726CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63A957126D12F8800F2E2BC /* MouseHookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookService.swift; sourceTree = "<group>"; };
 		D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		D6210F1426CDFB7A00DEF70A /* DokodemoDragUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D6210F1526CDFB7A00DEF70A /* MouseHookSampleUITests.swift */,
+				D6210F1526CDFB7A00DEF70A /* DokodemoDragUITests.swift */,
 				D6210F1726CDFB7A00DEF70A /* Info.plist */,
 			);
 			path = DokodemoDragUITests;
@@ -185,7 +185,7 @@
 			packageProductDependencies = (
 				D6D8BA2D26D0932500F0D9EF /* Defaults */,
 			);
-			productName = MouseHookSample;
+			productName = DokodemoDrag;
 			productReference = D6210EF426CDFB7900DEF70A /* DokodemoDrag.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -203,7 +203,7 @@
 				D6210F0826CDFB7A00DEF70A /* PBXTargetDependency */,
 			);
 			name = DokodemoDragTests;
-			productName = MouseHookSampleTests;
+			productName = DokodemoDragTests;
 			productReference = D6210F0626CDFB7A00DEF70A /* DokodemoDragTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -221,7 +221,7 @@
 				D6210F1326CDFB7A00DEF70A /* PBXTargetDependency */,
 			);
 			name = DokodemoDragUITests;
-			productName = MouseHookSampleUITests;
+			productName = DokodemoDragUITests;
 			productReference = D6210F1126CDFB7A00DEF70A /* DokodemoDragUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -323,7 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6210F1626CDFB7A00DEF70A /* MouseHookSampleUITests.swift in Sources */,
+				D6210F1626CDFB7A00DEF70A /* DokodemoDragUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,14 +519,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
-				INFOPLIST_FILE = MouseHookSampleTests/Info.plist;
+				INFOPLIST_FILE = DokodemoDragTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.DokodemoDragTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DokodemoDrag.app/Contents/MacOS/DokodemoDrag";
@@ -541,14 +541,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
-				INFOPLIST_FILE = MouseHookSampleTests/Info.plist;
+				INFOPLIST_FILE = DokodemoDragTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.DokodemoDragTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DokodemoDrag.app/Contents/MacOS/DokodemoDrag";
@@ -562,16 +562,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
-				INFOPLIST_FILE = MouseHookSampleUITests/Info.plist;
+				INFOPLIST_FILE = DokodemoDragUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.DokodemoDragUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = MouseHookSample;
+				TEST_TARGET_NAME = DokodemoDrag;
 			};
 			name = Debug;
 		};
@@ -582,16 +582,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
-				INFOPLIST_FILE = MouseHookSampleUITests/Info.plist;
+				INFOPLIST_FILE = DokodemoDragUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmu.MouseHookSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = hmu.DokodemoDragUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = MouseHookSample;
+				TEST_TARGET_NAME = DokodemoDrag;
 			};
 			name = Release;
 		};
