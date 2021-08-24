@@ -14,6 +14,7 @@
 		D6210F0B26CDFB7A00DEF70A /* DokodemoDragTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F0A26CDFB7A00DEF70A /* DokodemoDragTests.swift */; };
 		D6210F1626CDFB7A00DEF70A /* DokodemoDragUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F1526CDFB7A00DEF70A /* DokodemoDragUITests.swift */; };
 		D63A957226D12F8800F2E2BC /* MouseHookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63A957126D12F8800F2E2BC /* MouseHookService.swift */; };
+		D65F84D726D4B1420082D05A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D65F84D926D4B1420082D05A /* Localizable.strings */; };
 		D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */; };
 		D69DAD4C26D39128000E529D /* DokodemoDragLauncher.app in Resources */ = {isa = PBXBuildFile; fileRef = D69DAD4B26D39128000E529D /* DokodemoDragLauncher.app */; };
 		D69DAD4D26D39136000E529D /* DokodemoDragLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = D69DAD4B26D39128000E529D /* DokodemoDragLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -68,6 +69,7 @@
 		D6210F1726CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63A957126D12F8800F2E2BC /* MouseHookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookService.swift; sourceTree = "<group>"; };
 		D65F84D126D4AD860082D05A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		D65F84D826D4B1420082D05A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
 		D683DA9F26CF614D00B2B162 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		D69DAD4B26D39128000E529D /* DokodemoDragLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = DokodemoDragLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 		D6210EF626CDFB7900DEF70A /* DokodemoDrag */ = {
 			isa = PBXGroup;
 			children = (
+				D65F84D226D4AFAD0082D05A /* Resources */,
 				D6210EF726CDFB7900DEF70A /* AppDelegate.swift */,
 				D6210EF926CDFB7900DEF70A /* ViewController.swift */,
 				D6210EFB26CDFB7A00DEF70A /* Assets.xcassets */,
@@ -155,6 +158,14 @@
 				D6210F1726CDFB7A00DEF70A /* Info.plist */,
 			);
 			path = DokodemoDragUITests;
+			sourceTree = "<group>";
+		};
+		D65F84D226D4AFAD0082D05A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D65F84D926D4B1420082D05A /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D683DA9E26CF614D00B2B162 /* Frameworks */ = {
@@ -278,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6210EFC26CDFB7A00DEF70A /* Assets.xcassets in Resources */,
+				D65F84D726D4B1420082D05A /* Localizable.strings in Resources */,
 				D69DAD4C26D39128000E529D /* DokodemoDragLauncher.app in Resources */,
 				D6210EFF26CDFB7A00DEF70A /* Main.storyboard in Resources */,
 			);
@@ -352,6 +364,14 @@
 				D65F84D126D4AD860082D05A /* ja */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D65F84D926D4B1420082D05A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D65F84D826D4B1420082D05A /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
