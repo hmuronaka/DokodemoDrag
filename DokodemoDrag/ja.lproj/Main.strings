@@ -379,6 +379,7 @@
 
 /* Class = "NSMenuItem"; title = "Quit WindowMover"; ObjectID = "vm1-dR-C61"; */
 "vm1-dR-C61.title" = "終了する";
+"c5f-D6-j83.title" = "終了する";
 
 /* Class = "NSMenuItem"; title = "Make Upper Case"; ObjectID = "vmV-6d-7jI"; */
 "vmV-6d-7jI.title" = "Make Upper Case";
@@ -403,3 +404,5 @@
 
 /* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "z6F-FW-3nz"; */
 "z6F-FW-3nz.title" = "Show Substitutions";
+
+"K52-zn-oTo.title" = "アクセシビリティを許可してからアプリを再起動してください。";
