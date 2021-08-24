@@ -75,7 +75,7 @@ class StatusBarItem {
         }
         
         if let isEnableMenuItem = menu.item(withTag: StatusBarMenuItemTag.enableOrDisable.rawValue) {
-            isEnableMenuItem.title = SettingService.shared.isEnable ? NSLocalizedString("disable", comment: "") : NSLocalizedString("enable", comment: "")
+            isEnableMenuItem.title = SettingService.shared.isEnable ? NSLocalizedString("Disable", comment: "") : NSLocalizedString("Enable", comment: "")
         }
     }
 }

@@ -686,14 +686,14 @@
                                 <action selector="toggleIsEnable:" target="Voe-Tx-rLC" id="qkU-f0-vKi"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="isLaunchOnLogin" tag="10" id="CBD-uR-x03">
+                        <menuItem title="Launch on login" tag="10" id="CBD-uR-x03">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="toggleIsLaunchOnLogin:" target="Voe-Tx-rLC" id="v7V-d1-kHS"/>
                             </connections>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="zhC-QQ-oKL"/>
-                        <menuItem title="Quit" keyEquivalent="q" id="vm1-dR-C61">
+                        <menuItem title="Quit DokodemoDrag" keyEquivalent="q" id="vm1-dR-C61">
                             <connections>
                                 <action selector="terminate:" target="hnw-xV-0zn" id="o8U-7r-P0B"/>
                             </connections>
