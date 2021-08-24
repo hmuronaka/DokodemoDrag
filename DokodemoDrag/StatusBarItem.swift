@@ -11,10 +11,17 @@ enum StatusBarMenuItemTag: Int {
     case enableOrDisable = 20
 }
 
+
+/// MacOSのメニューバーに表示するMenuに対応するクラス
 class StatusBarItem {
     static let instance = StatusBarItem()
+    
+    /// MacOSの右上に配置するMenuに対するインスタンス
     private var nsStatusItem: NSStatusItem?
+    
     private var added: Bool = false
+    
+    
     public var statusMenu: NSMenu? {
         didSet {
             nsStatusItem?.menu = statusMenu
