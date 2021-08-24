@@ -17,7 +17,8 @@ import Foundation
 import Carbon
 import Cocoa
 
-class Logger {
+// RectangleのLoggerの代わりのクラス
+fileprivate class Logger {
     static func log(_ str: String) {
 //        NSLog(str)
     }
