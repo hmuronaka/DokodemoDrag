@@ -676,7 +676,7 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DokodemoDrag" customModuleProvider="target">
                     <connections>
-                        <outlet property="statusBarMenu" destination="ajO-tZ-lK0" id="JyY-qJ-Sq2"/>
+                        <outlet property="authorizedMenu" destination="ajO-tZ-lK0" id="JyY-qJ-Sq2"/>
                         <outlet property="unauthorizedMenu" destination="IVD-bH-DOJ" id="xCn-C6-weZ"/>
                     </connections>
                 </customObject>

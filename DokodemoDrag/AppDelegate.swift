@@ -11,14 +11,14 @@ import ServiceManagement
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
     static let launcherAppId = "hmu.DokodemoDragLauncher"
-    @IBOutlet var statusBarMenu: NSMenu!
+    @IBOutlet var authorizedMenu: NSMenu!
     @IBOutlet var unauthorizedMenu: NSMenu!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let isProcessTrusted = AXIsProcessTrusted()
         NSLog("applicationDidFinishLaunching. AXIsProcessTrusted: \(isProcessTrusted)")
         
-        StatusBarItem.instance.statusMenu = isProcessTrusted ? statusBarMenu : unauthorizedMenu
+        StatusBarItem.instance.statusMenu = isProcessTrusted ? authorizedMenu : unauthorizedMenu
         StatusBarItem.instance.refreshVisibility()
         checkLaunchOnLogin()
         
