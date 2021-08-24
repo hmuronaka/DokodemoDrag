@@ -8,6 +8,7 @@
 import Cocoa
 
 enum StatusBarMenuItemTag: Int {
+    case isLaunchOnLogin = 10
     case enableOrDisable = 20
 }
 
@@ -64,7 +65,7 @@ class StatusBarItem {
         guard let menu = self.statusMenu else {
             return
         }
-        if let isLaunchOnLoginMenuItem = menu.item(withTitle: "isLaunchOnLogin") {
+        if let isLaunchOnLoginMenuItem = menu.item(withTag: StatusBarMenuItemTag.isLaunchOnLogin.rawValue) {
             isLaunchOnLoginMenuItem.state = SettingService.shared.isLaunchOnLogin ? .on : .off
         }
         

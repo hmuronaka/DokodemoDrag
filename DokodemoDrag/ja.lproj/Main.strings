@@ -75,7 +75,7 @@
 "Bw7-FT-i3A.title" = "Save As…";
 
 /* Class = "NSMenuItem"; title = "isLaunchOnLogin"; ObjectID = "CBD-uR-x03"; */
-"CBD-uR-x03.title" = "isLaunchOnLogin";
+"CBD-uR-x03.title" = "ログイン時に起動する";
 
 /* Class = "NSMenuItem"; title = "Close"; ObjectID = "DVo-aG-piG"; */
 "DVo-aG-piG.title" = "Close";
@@ -162,7 +162,7 @@
 "Nop-cj-93Q.title" = "\tDefault";
 
 /* Class = "NSMenuItem"; title = "enable"; ObjectID = "NzX-rl-TBW"; */
-"NzX-rl-TBW.title" = "enable";
+"NzX-rl-TBW.title" = "有効にする";
 
 /* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
 "OY7-WF-poV.title" = "Minimize";
@@ -378,7 +378,7 @@
 "vNY-rz-j42.title" = "Clear Menu";
 
 /* Class = "NSMenuItem"; title = "Quit WindowMover"; ObjectID = "vm1-dR-C61"; */
-"vm1-dR-C61.title" = "Quit WindowMover";
+"vm1-dR-C61.title" = "終了する";
 
 /* Class = "NSMenuItem"; title = "Make Upper Case"; ObjectID = "vmV-6d-7jI"; */
 "vmV-6d-7jI.title" = "Make Upper Case";
