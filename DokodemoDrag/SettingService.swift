@@ -27,7 +27,7 @@ class SettingService {
     public func setEnableLaunchOnLogin(enabled: Bool) {
         let smLoginSuccess = SMLoginItemSetEnabled(AppDelegate.launcherAppId as CFString, enabled)
         if !smLoginSuccess {
-            Logger.log("Unable to set launch at login preference. Attempting one more time.")
+            NSLog("Unable to set launch at login preference. Attempting one more time.")
             SMLoginItemSetEnabled(AppDelegate.launcherAppId as CFString, enabled)
         }
     }

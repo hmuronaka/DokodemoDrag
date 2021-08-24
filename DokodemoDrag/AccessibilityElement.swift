@@ -6,11 +6,19 @@
 //  Copyright © 2019 Ryan Hanson. All rights reserved.
 //
 
+// このソースコードはRectangleより.
+// https://github.com/rxhanson/Rectangle
+// https://github.com/rxhanson/Rectangle/blob/master/Rectangle/AccessibilityElement.swift
+//
+// アプリ外のWindowを制御するためにアクセシビリティに関する機能を利用しているため、
+// アプリを利用するために、MacOSの設定「セキュリティとプライバシー」から「アクセシビリティ」を許可する必要がある。
+
 import Foundation
 import Carbon
 import Cocoa
 
-class Logger {
+// RectangleのLoggerの代わりのクラス
+fileprivate class Logger {
     static func log(_ str: String) {
 //        NSLog(str)
     }
