@@ -679,7 +679,7 @@
                         <outlet property="statusBarMenu" destination="ajO-tZ-lK0" id="JyY-qJ-Sq2"/>
                     </connections>
                 </customObject>
-                <menu id="ajO-tZ-lK0">
+                <menu id="ajO-tZ-lK0" userLabel="Authorized Menu">
                     <items>
                         <menuItem title="Enable" tag="20" id="NzX-rl-TBW">
                             <modifierMask key="keyEquivalentModifierMask"/>
