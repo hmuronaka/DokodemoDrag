@@ -1,10 +1,8 @@
 //
 //  AccessibilityElement.swift
-//  Rectangle, Ported from Spectacle, Combined with snippets from ModMove
+//  DokodemoDrag, Ported Rectangle(Rectangle, Ported from Spectacle, Combined with snippets from ModMove )
 //
-//  Created by Ryan Hanson on 6/12/19.
-//  Copyright © 2019 Ryan Hanson. All rights reserved.
-//
+//  Created by MuronakaHiroaki on 2021/08/19.
 
 // このソースコードはRectangleより.
 // https://github.com/rxhanson/Rectangle
