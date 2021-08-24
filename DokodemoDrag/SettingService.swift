@@ -32,6 +32,7 @@ class SettingService {
         }
     }
     
+    @discardableResult
     public func toggleLaunchOnLogin() -> Bool {
         let newSetting: Bool = !Defaults[.isLaunchOnLogin]
         setEnableLaunchOnLogin(enabled: newSetting)
@@ -39,6 +40,7 @@ class SettingService {
         return newSetting
     }
     
+    @discardableResult
     public func toggleIsEnable() -> Bool {
         let newSetting = !self.isEnable
         if newSetting {
@@ -50,6 +52,9 @@ class SettingService {
         return newSetting
     }
     
+    public func observe(handler: @escaping () -> ()) -> Any {
+        return Defaults.observe(keys: .isEnable, .isLaunchOnLogin, handler: handler)
+    }
 }
 
 fileprivate extension Defaults.Keys {

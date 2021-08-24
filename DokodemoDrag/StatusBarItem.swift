@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import Defaults
 
 enum StatusBarMenuItemTag: Int {
     case isLaunchOnLogin = 10
@@ -19,10 +20,11 @@ class StatusBarItem {
     
     /// MacOSの右上に配置するMenuに対するインスタンス
     private var nsStatusItem: NSStatusItem?
-    
     private var added: Bool = false
     
+    private var observer: Any?
     
+
     public var statusMenu: NSMenu? {
         didSet {
             nsStatusItem?.menu = statusMenu
@@ -31,6 +33,9 @@ class StatusBarItem {
     }
     
     private init() {
+        self.observer = SettingService.shared.observe() { [unowned self] in
+            self.refreshMenu()
+        }
     }
     
     public func refreshVisibility() {
