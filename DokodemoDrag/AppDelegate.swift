@@ -39,17 +39,13 @@ extension AppDelegate {
     /// ログイン時に自動起動のメニュー操作
     /// - Parameter item:
     @IBAction func toggleIsLaunchOnLogin(_ item: NSMenuItem) {
-        let newSetting = SettingService.shared.toggleLaunchOnLogin()
-        // TODO: 適切な箇所での処理
-        item.state = newSetting ? .on : .off
+        SettingService.shared.toggleLaunchOnLogin()
     }
     
     /// 有効・無効のメニュー操作
     /// - Parameter item:
     @IBAction func toggleIsEnable(_ item: NSMenuItem) {
-        let newSetting = SettingService.shared.toggleIsEnable()
-        // TODO: 適切な箇所での処理
-        item.title = newSetting ? "無効にする" : "有効にする"
+        SettingService.shared.toggleIsEnable()
     }
     
     
