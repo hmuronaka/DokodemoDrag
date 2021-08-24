@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "RectangleStatusTemplate22.png",
+      "filename" : "icon22.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "RectangleStatusTemplate44.png",
+      "filename" : "icon44.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "RectangleStatusTemplate.png",
+      "filename" : "icon144.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
