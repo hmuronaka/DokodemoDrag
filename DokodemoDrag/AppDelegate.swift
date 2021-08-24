@@ -7,23 +7,24 @@
 
 import Cocoa
 import ServiceManagement
-import os.log
-import Defaults
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
     static let launcherAppId = "hmu.DokodemoDragLauncher"
-    @IBOutlet var statusBarMenu: NSMenu!
+    @IBOutlet var authorizedMenu: NSMenu!
+    @IBOutlet var unauthorizedMenu: NSMenu!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        NSLog("applicationDidFinishLaunching. AXIsProcessTrusted: \(AXIsProcessTrusted())")
+        let isProcessTrusted = AXIsProcessTrusted()
+        NSLog("applicationDidFinishLaunching. AXIsProcessTrusted: \(isProcessTrusted)")
         
-        StatusBarItem.instance.statusMenu = statusBarMenu
+        StatusBarItem.instance.statusMenu = isProcessTrusted ? authorizedMenu : unauthorizedMenu
         StatusBarItem.instance.refreshVisibility()
-        
         checkLaunchOnLogin()
         
-        MouseHookService.shared.start()
+        if isProcessTrusted {
+            MouseHookService.shared.start()
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

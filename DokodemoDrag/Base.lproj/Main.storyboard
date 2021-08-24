@@ -676,10 +676,11 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DokodemoDrag" customModuleProvider="target">
                     <connections>
-                        <outlet property="statusBarMenu" destination="ajO-tZ-lK0" id="JyY-qJ-Sq2"/>
+                        <outlet property="authorizedMenu" destination="ajO-tZ-lK0" id="JyY-qJ-Sq2"/>
+                        <outlet property="unauthorizedMenu" destination="IVD-bH-DOJ" id="xCn-C6-weZ"/>
                     </connections>
                 </customObject>
-                <menu id="ajO-tZ-lK0">
+                <menu id="ajO-tZ-lK0" userLabel="Authorized Menu">
                     <items>
                         <menuItem title="Enable" tag="20" id="NzX-rl-TBW">
                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -697,6 +698,19 @@
                         <menuItem title="Quit DokodemoDrag" keyEquivalent="q" id="vm1-dR-C61">
                             <connections>
                                 <action selector="terminate:" target="hnw-xV-0zn" id="o8U-7r-P0B"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
+                <menu id="IVD-bH-DOJ" userLabel="Unauthorized Menu">
+                    <items>
+                        <menuItem title="Please allow accessibility and then restart" id="K52-zn-oTo">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="Lbc-bY-f7y"/>
+                        <menuItem title="Quit DokodemoDrag" keyEquivalent="q" id="c5f-D6-j83">
+                            <connections>
+                                <action selector="terminate:" target="hnw-xV-0zn" id="TGL-vP-LmB"/>
                             </connections>
                         </menuItem>
                     </items>
