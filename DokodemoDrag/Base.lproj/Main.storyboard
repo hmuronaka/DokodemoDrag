@@ -798,6 +798,20 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rNC-pW-ku2">
+                                <rect key="frame" x="41" y="139" width="368" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="iFc-Cd-8d4"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" id="HDP-m5-VxX">
+                                    <font key="font" textStyle="body" name=".SFNS-Regular"/>
+                                    <string key="title">In order to use this app, please open [System Preferences]-
+[Security and Privacy],  then [Privacy]-[Accessibility], 
+and enable this app, and then restart this app.</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="R3s-OB-Ghd">
                                 <rect key="frame" x="195" y="85" width="60" height="32"/>
                                 <constraints>
@@ -811,27 +825,13 @@
                                     <action selector="terminate:" target="pdJ-7F-IGs" id="raR-7H-z17"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rNC-pW-ku2">
-                                <rect key="frame" x="41" y="127" width="368" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="iFc-Cd-8d4"/>
-                                </constraints>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" id="HDP-m5-VxX">
-                                    <font key="font" textStyle="body" name=".SFNS-Regular"/>
-                                    <string key="title">In order to use this app, please open [System Preferences]-
-[Security and Privacy],  then [Privacy]-[Accessibility], 
-and enable this app, and then restart this app.</string>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="rNC-pW-ku2" firstAttribute="top" secondItem="Zo7-t4-frh" secondAttribute="bottom" constant="43" id="6LV-Dv-beo"/>
+                            <constraint firstItem="rNC-pW-ku2" firstAttribute="top" secondItem="Zo7-t4-frh" secondAttribute="bottom" constant="31" id="6LV-Dv-beo"/>
                             <constraint firstItem="Zo7-t4-frh" firstAttribute="top" secondItem="Yem-Z0-clX" secondAttribute="top" constant="28" id="OXp-HD-f0R"/>
                             <constraint firstItem="Zo7-t4-frh" firstAttribute="centerX" secondItem="Yem-Z0-clX" secondAttribute="centerX" id="Rtt-0O-Pt8"/>
                             <constraint firstItem="rNC-pW-ku2" firstAttribute="centerX" secondItem="Yem-Z0-clX" secondAttribute="centerX" id="gey-G4-w61"/>
-                            <constraint firstItem="R3s-OB-Ghd" firstAttribute="top" secondItem="rNC-pW-ku2" secondAttribute="bottom" constant="15" id="iQu-rr-xMy"/>
+                            <constraint firstItem="R3s-OB-Ghd" firstAttribute="top" secondItem="rNC-pW-ku2" secondAttribute="bottom" constant="27" id="iQu-rr-xMy"/>
                             <constraint firstItem="R3s-OB-Ghd" firstAttribute="centerX" secondItem="Yem-Z0-clX" secondAttribute="centerX" id="uEy-jB-HJH"/>
                         </constraints>
                     </view>
