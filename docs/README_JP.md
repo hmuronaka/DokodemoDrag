@@ -16,7 +16,7 @@ DokodemoDragを使うとウィンドウのどこにマウスカーソルがあ�
 
 # インストールと初回起動方法
 
-1. GitHubからアプリの入ったzipファイルをダウンロードします。
+1. GitHubのこのリポジトリからアプリの入った[zipファイルをダウンロード](https://github.com/hmuronaka/DokodemoDrag/releases/download/0.1/DokodemoDrag.app.zip)します。
 2. zipファイルを解凍して、DokodemoDrag.appをApplicationフォルダに移動します。
 3. FinderのApplicationから右クリックでDokodemoDragを起動します(起動するとメニューバー右上にアイコンが表示されます）。
 4. MacOSの[システム環境設定]=>[セキュリティとプラバシー]を開きます。[プライバシー]タブを開き[アクセシビリティ]を選択して、DokodemoDrag.appを有効にします。
