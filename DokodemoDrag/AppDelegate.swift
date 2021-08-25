@@ -60,10 +60,8 @@ extension AppDelegate {
             let killNotification = Notification.Name("killLauncher")
             DistributedNotificationCenter.default().post(name: killNotification, object: Bundle.main.bundleIdentifier!)
         }
-//        if !Defaults.SUHasLaunchedBefore {
-//            Defaults.launchOnLogin.enabled = true
-//        }
         
+        // 以下のコメントはRectangleのまま
         // Even if we are already set up to launch on login, setting it again since macOS can be buggy with this type of launch on login.
         if SettingService.shared.isLaunchOnLogin {
             SettingService.shared.setEnableLaunchOnLogin(enabled: true)
