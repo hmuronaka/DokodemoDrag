@@ -3,7 +3,8 @@
   DokodemoDrag
 
   Created by Hiroaki Muronaka on 2021/08/24.
-  
+  Copyright © 2021 Muronaka Hiroaki. All rights reserved.
+
 */
 "Enable" = "有効にする";
 "Disable" = "無効にする";

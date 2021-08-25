@@ -3,6 +3,8 @@
 //  DokodemoDrag, Ported Rectangle(Rectangle, Ported from Spectacle, Combined with snippets from ModMove )
 //
 //  Created by Hiroaki Muronaka on 2021/08/19.
+//  Copyright © 2021 Muronaka Hiroaki. All rights reserved.
+//
 
 // このソースコードはRectangleより.
 // https://github.com/rxhanson/Rectangle
