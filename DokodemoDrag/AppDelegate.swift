@@ -23,8 +23,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         StatusBarItem.instance.refreshVisibility()
         checkLaunchOnLogin()
         
-        if isProcessTrusted {
-            MouseHookService.shared.start()
+        MouseHookService.shared.start()
+        if !isProcessTrusted {
+            showWelcomeWindowWhenUnauthorized()
         }
     }
 
@@ -66,6 +67,18 @@ extension AppDelegate {
         if SettingService.shared.isLaunchOnLogin {
             SettingService.shared.setEnableLaunchOnLogin(enabled: true)
         }
+    }
+
+    private func showWelcomeWindowWhenUnauthorized() {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "WelcomWindowWhenUnauthorized") as? NSWindowController
+        windowController?.showWindow(self)
+    }
+
+    private func showWelcomeWindow() {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "WelcomWindow") as? NSWindowController
+        windowController?.showWindow(self)
     }
 }
 

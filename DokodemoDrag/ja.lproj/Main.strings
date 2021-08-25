@@ -132,7 +132,7 @@
 "H8h-7b-M4v.title" = "View";
 
 /* Class = "NSTextFieldCell"; title = "In order to use this app, please open [System Preferences]-\n[Security and Privacy],  then [Privacy]-[Accessibility], and enable this app."; ObjectID = "HDP-m5-VxX"; */
-"HDP-m5-VxX.title" = "アプリを利用するために[システム環境設定]-\n[セキュリティーとプライバシー]を開き、[プライバシー]-[アクセシビリティー]から\nこのアプリを有効にしてください。";
+"HDP-m5-VxX.title" = "機能を有効にするために、[システム環境設定]-\n[セキュリティーとプライバシー]を開き、[プライバシー]-\n[アクセシビリティ]からこのアプリを有効にした後、\nアプリを再起動してください。";
 
 /* Class = "NSMenuItem"; title = "Text Replacement"; ObjectID = "HFQ-gK-NFA"; */
 "HFQ-gK-NFA.title" = "Text Replacement";
@@ -141,7 +141,7 @@
 "HFo-cy-zxI.title" = "Show Spelling and Grammar";
 
 /* Class = "NSButtonCell"; title = "Next"; ObjectID = "HkN-jO-2Is"; */
-"HkN-jO-2Is.title" = "次へ";
+"HkN-jO-2Is.title" = "終了する";
 
 /* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
 "HyV-fh-RgO.title" = "View";

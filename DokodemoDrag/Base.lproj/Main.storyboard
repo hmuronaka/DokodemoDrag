@@ -754,32 +754,52 @@
                 <windowController storyboardIdentifier="WelcomWindow" id="V1h-oB-pCU" sceneMemberID="viewController">
                     <window key="window" title="Welcom to DokodemoDrag" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="EnU-eC-YYn">
                         <windowStyleMask key="styleMask" titled="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="425" y="462" width="480" height="270"/>
+                        <rect key="contentRect" x="1070" y="612" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
                         <view key="contentView" id="yuT-9Z-wib">
                             <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </view>
                     </window>
-                    <connections>
-                        <segue destination="fK0-yT-qWn" kind="relationship" relationship="window.shadowedContentViewController" id="qo0-NU-tld"/>
-                    </connections>
                 </windowController>
                 <customObject id="vhU-tP-MM5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="700" y="250"/>
         </scene>
-        <!--Welcom to DokodemoDrag(1/3)-->
+        <!--Window Controller-->
+        <scene sceneID="xqS-Uy-wrm">
+            <objects>
+                <windowController storyboardIdentifier="WelcomWindowWhenUnauthorized" id="aSz-Kj-o37" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Plx-Mt-5PQ">
+                        <windowStyleMask key="styleMask" titled="YES"/>
+                        <rect key="contentRect" x="425" y="462" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+                        <view key="contentView" id="gGW-4Y-TKl">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="aSz-Kj-o37" id="d72-CI-tmx"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="fK0-yT-qWn" kind="relationship" relationship="window.shadowedContentViewController" id="Bj8-6Y-66Q"/>
+                    </connections>
+                </windowController>
+                <customObject id="dhU-nt-Jpk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="250"/>
+        </scene>
+        <!--Welcom to DokodemoDrag-->
         <scene sceneID="Udo-s5-MXF">
             <objects>
-                <viewController title="Welcom to DokodemoDrag(1/3)" storyboardIdentifier="WelcomeWindowEnableAccessibility" id="fK0-yT-qWn" customClass="WelcomeViewController" customModule="DokodemoDrag" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcom to DokodemoDrag" storyboardIdentifier="WelcomeWindowEnableAccessibility" id="fK0-yT-qWn" sceneMemberID="viewController">
                     <view key="view" id="Yem-Z0-clX">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-t4-frh">
-                                <rect key="frame" x="87" y="249" width="276" height="31"/>
+                                <rect key="frame" x="87" y="241" width="276" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="PAa-JT-bNb"/>
                                 </constraints>
@@ -790,22 +810,22 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="R3s-OB-Ghd">
-                                <rect key="frame" x="194" y="85" width="63" height="32"/>
+                                <rect key="frame" x="195" y="85" width="60" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="8Kg-x8-i1y"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HkN-jO-2Is">
+                                <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HkN-jO-2Is">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="next:" target="fK0-yT-qWn" id="Agk-3m-Osw"/>
+                                    <action selector="terminate:" target="pdJ-7F-IGs" id="raR-7H-z17"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rNC-pW-ku2">
-                                <rect key="frame" x="41" y="152" width="368" height="54"/>
+                                <rect key="frame" x="41" y="127" width="368" height="71"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="iFc-Cd-8d4"/>
+                                    <constraint firstAttribute="height" constant="71" id="iFc-Cd-8d4"/>
                                 </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" id="HDP-m5-VxX">
                                     <font key="font" textStyle="body" name=".SFNS-Regular"/>
@@ -819,21 +839,17 @@ and enable this app, and then restart this app.</string>
                         </subviews>
                         <constraints>
                             <constraint firstItem="rNC-pW-ku2" firstAttribute="top" secondItem="Zo7-t4-frh" secondAttribute="bottom" constant="43" id="6LV-Dv-beo"/>
-                            <constraint firstItem="Zo7-t4-frh" firstAttribute="top" secondItem="Yem-Z0-clX" secondAttribute="top" constant="20" symbolic="YES" id="OXp-HD-f0R"/>
+                            <constraint firstItem="Zo7-t4-frh" firstAttribute="top" secondItem="Yem-Z0-clX" secondAttribute="top" constant="28" id="OXp-HD-f0R"/>
                             <constraint firstItem="Zo7-t4-frh" firstAttribute="centerX" secondItem="Yem-Z0-clX" secondAttribute="centerX" id="Rtt-0O-Pt8"/>
                             <constraint firstItem="rNC-pW-ku2" firstAttribute="centerX" secondItem="Yem-Z0-clX" secondAttribute="centerX" id="gey-G4-w61"/>
-                            <constraint firstItem="R3s-OB-Ghd" firstAttribute="top" secondItem="rNC-pW-ku2" secondAttribute="bottom" constant="40" id="iQu-rr-xMy"/>
+                            <constraint firstItem="R3s-OB-Ghd" firstAttribute="top" secondItem="rNC-pW-ku2" secondAttribute="bottom" constant="15" id="iQu-rr-xMy"/>
                             <constraint firstItem="R3s-OB-Ghd" firstAttribute="centerX" secondItem="Yem-Z0-clX" secondAttribute="centerX" id="uEy-jB-HJH"/>
-                            <constraint firstItem="R3s-OB-Ghd" firstAttribute="top" secondItem="rNC-pW-ku2" secondAttribute="bottom" constant="40" id="xBI-Wx-QUe"/>
                         </constraints>
                     </view>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="pageIdentifier" value="WelcomeWindowEnableAccessibility"/>
-                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <customObject id="pdJ-7F-IGs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="687"/>
+            <point key="canvasLocation" x="1261" y="703"/>
         </scene>
         <!--Welcome to DokodemoDrag(2/3)-->
         <scene sceneID="Ckx-N1-txr">
@@ -915,7 +931,7 @@ and enable this app, and then restart this app.</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XTE-v9-GlS">
-                                <rect key="frame" x="166" y="254" width="118" height="26"/>
+                                <rect key="frame" x="166" y="246" width="118" height="26"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="How to Use" id="cYG-xY-XKE">
                                     <font key="font" textStyle="title1" name=".SFNS-Regular"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -936,7 +952,7 @@ and enable this app, and then restart this app.</string>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S7s-Cr-EKb">
-                                <rect key="frame" x="27" y="127" width="396" height="96"/>
+                                <rect key="frame" x="27" y="119" width="396" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="4Do-35-WRE"/>
                                 </constraints>
@@ -956,8 +972,8 @@ Resize the window:
                         <constraints>
                             <constraint firstItem="gNL-7r-0Ct" firstAttribute="centerX" secondItem="Zqq-C2-QFd" secondAttribute="centerX" id="DnV-nB-uD4"/>
                             <constraint firstItem="XTE-v9-GlS" firstAttribute="centerX" secondItem="Zqq-C2-QFd" secondAttribute="centerX" id="Kpe-f7-8aF"/>
-                            <constraint firstItem="XTE-v9-GlS" firstAttribute="top" secondItem="Zqq-C2-QFd" secondAttribute="top" constant="20" symbolic="YES" id="LCf-eH-7ft"/>
-                            <constraint firstItem="gNL-7r-0Ct" firstAttribute="top" secondItem="S7s-Cr-EKb" secondAttribute="bottom" constant="15" id="aIU-Zo-Oou"/>
+                            <constraint firstItem="XTE-v9-GlS" firstAttribute="top" secondItem="Zqq-C2-QFd" secondAttribute="top" constant="28" id="LCf-eH-7ft"/>
+                            <constraint firstItem="gNL-7r-0Ct" firstAttribute="top" secondItem="S7s-Cr-EKb" secondAttribute="bottom" constant="7" id="aIU-Zo-Oou"/>
                             <constraint firstItem="S7s-Cr-EKb" firstAttribute="centerX" secondItem="Zqq-C2-QFd" secondAttribute="centerX" id="bn8-ks-oUD"/>
                             <constraint firstItem="S7s-Cr-EKb" firstAttribute="top" secondItem="XTE-v9-GlS" secondAttribute="bottom" constant="31" id="ea5-C7-U9E"/>
                             <constraint firstItem="gNL-7r-0Ct" firstAttribute="centerX" secondItem="Zqq-C2-QFd" secondAttribute="centerX" id="g0d-H8-9y1"/>
