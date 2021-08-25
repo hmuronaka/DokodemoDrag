@@ -5,7 +5,7 @@ DokodemoDrag
 
 ----
 
-Isn't it annoying to move the mouse cursor when moving or resizing a window?
+On a Mac, isn't it annoying to move the mouse cursor when moving or resizing a window?
 
 DokodemoDrag makes it easy to move and resize the window, no matter where the mouse cursor is on the window.
 
