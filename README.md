@@ -47,5 +47,5 @@ The following settings and operations are available from the menu on the menu ba
 
 Much of the implementation of this app is based on [Rectangle](https://github.com/rxhanson/Rectangle), which allows you to place Mac windows from keyboard shortcuts.
 
-# ライセンス
+# License
 MIT License
