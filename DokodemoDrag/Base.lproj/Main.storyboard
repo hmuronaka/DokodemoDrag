@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="V1h-oB-pCU">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -761,6 +761,9 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </view>
                     </window>
+                    <connections>
+                        <segue destination="kVu-vU-Etk" kind="relationship" relationship="window.shadowedContentViewController" id="n5M-U4-rqi"/>
+                    </connections>
                 </windowController>
                 <customObject id="vhU-tP-MM5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -851,10 +854,10 @@ and enable this app, and then restart this app.</string>
             </objects>
             <point key="canvasLocation" x="1261" y="703"/>
         </scene>
-        <!--Welcome to DokodemoDrag(2/3)-->
+        <!--Welcome to DokodemoDrag(1/2)-->
         <scene sceneID="Ckx-N1-txr">
             <objects>
-                <viewController title="Welcome to DokodemoDrag(2/3)" storyboardIdentifier="WelcomeWindowLaunchOnLogin" id="kVu-vU-Etk" customClass="WelcomeViewController" customModule="DokodemoDrag" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome to DokodemoDrag(1/2)" storyboardIdentifier="WelcomeWindowLaunchOnLogin" id="kVu-vU-Etk" customClass="WelcomeViewController" customModule="DokodemoDrag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="UId-eb-l4P">
                         <rect key="frame" x="0.0" y="0.0" width="454" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -901,8 +904,17 @@ and enable this app, and then restart this app.</string>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qgp-to-tyC">
+                                <rect key="frame" x="89" y="244" width="276" height="26"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Welcome to DokodemoDrag" id="F3Y-sI-fgt">
+                                    <font key="font" textStyle="title1" name=".SFNS-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="qgp-to-tyC" firstAttribute="centerY" secondItem="UId-eb-l4P" secondAttribute="centerY" constant="-106.5" id="3lT-4U-9Hv"/>
                             <constraint firstItem="ePi-V1-UHt" firstAttribute="centerX" secondItem="UId-eb-l4P" secondAttribute="centerX" constant="-67" id="5oT-5F-IF4"/>
                             <constraint firstItem="7JW-rU-FV2" firstAttribute="centerY" secondItem="UId-eb-l4P" secondAttribute="centerY" constant="48" id="5uV-ab-FCF"/>
                             <constraint firstItem="Bgu-sM-Ssv" firstAttribute="top" secondItem="UId-eb-l4P" secondAttribute="top" constant="132" id="IQZ-If-zXW"/>
@@ -911,6 +923,7 @@ and enable this app, and then restart this app.</string>
                             <constraint firstItem="bNK-IJ-7yj" firstAttribute="centerX" secondItem="UId-eb-l4P" secondAttribute="centerX" id="awA-Ij-R0g"/>
                             <constraint firstItem="bNK-IJ-7yj" firstAttribute="top" secondItem="UId-eb-l4P" secondAttribute="top" constant="107" id="hyJ-TT-hIc"/>
                             <constraint firstItem="ePi-V1-UHt" firstAttribute="centerY" secondItem="UId-eb-l4P" secondAttribute="centerY" constant="48" id="j1a-sJ-q0q"/>
+                            <constraint firstItem="qgp-to-tyC" firstAttribute="centerX" secondItem="UId-eb-l4P" secondAttribute="centerX" id="oyN-TL-2V9"/>
                             <constraint firstAttribute="trailing" secondItem="Bgu-sM-Ssv" secondAttribute="trailing" constant="22" id="ywV-Pv-qPo"/>
                         </constraints>
                     </view>
@@ -920,12 +933,12 @@ and enable this app, and then restart this app.</string>
                 </viewController>
                 <customObject id="DYR-ss-q4Q" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="1080"/>
+            <point key="canvasLocation" x="698" y="689"/>
         </scene>
-        <!--Welcome to DokodemoDrag(3/3)-->
+        <!--Welcome to DokodemoDrag(1/2)-->
         <scene sceneID="x7y-D4-Ffa">
             <objects>
-                <viewController title="Welcome to DokodemoDrag(3/3)" storyboardIdentifier="WelcomeWindowHowToUse" id="zQx-h0-JvE" customClass="WelcomeViewController" customModule="DokodemoDrag" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome to DokodemoDrag(1/2)" storyboardIdentifier="WelcomeWindowHowToUse" id="zQx-h0-JvE" customClass="WelcomeViewController" customModule="DokodemoDrag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Zqq-C2-QFd">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -982,7 +995,7 @@ Resize the window:
                 </viewController>
                 <customObject id="CFg-KK-Axv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="1480"/>
+            <point key="canvasLocation" x="700" y="1092"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">

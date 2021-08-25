@@ -25,6 +25,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         StatusBarItem.instance.statusMenu = isProcessTrusted ? authorizedMenu : unauthorizedMenu
+        if SettingService.shared.isShowWelcomeWindow {
+            showWelcomeWindow()
+        }
+        
         StatusBarItem.instance.refreshVisibility()
         checkLaunchOnLogin()
         

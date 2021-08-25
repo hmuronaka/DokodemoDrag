@@ -22,6 +22,14 @@ class SettingService {
         return Defaults[.isEnable]
     }
     
+    public var isShowWelcomeWindow: Bool {
+        get {
+            return Defaults[.isShowWelcomeWindow]
+        } set {
+            Defaults[.isShowWelcomeWindow] = newValue
+        }
+    }
+    
     private init() {
     }
     
@@ -61,4 +69,5 @@ class SettingService {
 fileprivate extension Defaults.Keys {
     static let isLaunchOnLogin = Key<Bool>("isLaunchOnLogin", default: true)
     static let isEnable = Key<Bool>("isEnable", default: true)
+    static let isShowWelcomeWindow = Key<Bool>("isShowWelcomeWindow", default: true)
 }

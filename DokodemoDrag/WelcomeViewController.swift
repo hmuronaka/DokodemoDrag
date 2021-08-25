@@ -30,19 +30,13 @@ class WelcomeViewController: NSViewController {
         setLaunchOnLogin(value: false)
     }
     
-    @IBAction func next(_ sender: NSButton) {
-        // Storyboard IDの取得方法が分からない点(UIViewControllerと異なり、NSViewControllerでは取得できず）
-        // Runtime attributeを設定しても識別されなかった点(これは実装ミスの可能性あり）から
-        // やむをえずnextは遷移先指定の固定処理とする。
-        showViewController(identifier: "WelcomeWindowLaunchOnLogin")
-    }
-    
-    
     /// WelcomeWindowを閉じる
     /// - Parameter sender: 
     @IBAction func close(_ sender: NSButton) {
         self.view.window?.close()
+        SettingService.shared.isShowWelcomeWindow = false
     }
+    
     
     private func setLaunchOnLogin(value: Bool) {
         SettingService.shared.setEnableLaunchOnLogin(enabled: value)
@@ -54,8 +48,4 @@ class WelcomeViewController: NSViewController {
         self.view.window?.contentViewController = vc
 
     }
-    
-    
-
-    
 }
