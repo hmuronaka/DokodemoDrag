@@ -13,7 +13,6 @@ import ServiceManagement
 class AppDelegate: NSObject, NSApplicationDelegate {
     static let launcherAppId = "hmu.DokodemoDragLauncher"
     @IBOutlet var authorizedMenu: NSMenu!
-    @IBOutlet var unauthorizedMenu: NSMenu!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let isProcessTrusted = AXIsProcessTrusted()
@@ -24,16 +23,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             return
         }
         
-        StatusBarItem.instance.statusMenu = isProcessTrusted ? authorizedMenu : unauthorizedMenu
         if SettingService.shared.isShowWelcomeWindow {
             showWelcomeWindow()
         }
         
+        StatusBarItem.instance.statusMenu = authorizedMenu
         StatusBarItem.instance.refreshVisibility()
         checkLaunchOnLogin()
-        
         MouseHookService.shared.start()
-
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
