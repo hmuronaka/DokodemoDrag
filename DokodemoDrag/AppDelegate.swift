@@ -74,14 +74,16 @@ extension AppDelegate {
     }
 
     private func showWelcomeWindowWhenUnauthorized() {
-        let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        let windowController = storyboard.instantiateController(withIdentifier: "WelcomWindowWhenUnauthorized") as? NSWindowController
-        windowController?.showWindow(self)
+        self.showWindowController(identifier: "WelcomWindowWhenUnauthorized")
     }
 
     private func showWelcomeWindow() {
+        self.showWindowController(identifier: "WelcomWindow")
+    }
+    
+    private func showWindowController(identifier: String) {
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        let windowController = storyboard.instantiateController(withIdentifier: "WelcomWindow") as? NSWindowController
+        let windowController = storyboard.instantiateController(withIdentifier: identifier) as? NSWindowController
         windowController?.showWindow(self)
         
         // Windowが他のアプリに隠れるのを回避するために必要。
