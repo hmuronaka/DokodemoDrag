@@ -22,6 +22,14 @@ class SettingService {
         return Defaults[.isEnable]
     }
     
+    public var isShowWelcomeWindow: Bool {
+        get {
+            return Defaults[.isShowWelcomeWindow]
+        } set {
+            Defaults[.isShowWelcomeWindow] = newValue
+        }
+    }
+    
     private init() {
     }
     
@@ -31,13 +39,13 @@ class SettingService {
             NSLog("Unable to set launch at login preference. Attempting one more time.")
             SMLoginItemSetEnabled(AppDelegate.launcherAppId as CFString, enabled)
         }
+        Defaults[.isLaunchOnLogin] = enabled
     }
     
     @discardableResult
     public func toggleLaunchOnLogin() -> Bool {
         let newSetting: Bool = !Defaults[.isLaunchOnLogin]
         setEnableLaunchOnLogin(enabled: newSetting)
-        Defaults[.isLaunchOnLogin] = newSetting
         return newSetting
     }
     
@@ -61,4 +69,5 @@ class SettingService {
 fileprivate extension Defaults.Keys {
     static let isLaunchOnLogin = Key<Bool>("isLaunchOnLogin", default: true)
     static let isEnable = Key<Bool>("isEnable", default: true)
+    static let isShowWelcomeWindow = Key<Bool>("isShowWelcomeWindow", default: true)
 }

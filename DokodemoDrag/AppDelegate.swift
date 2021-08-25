@@ -13,19 +13,27 @@ import ServiceManagement
 class AppDelegate: NSObject, NSApplicationDelegate {
     static let launcherAppId = "hmu.DokodemoDragLauncher"
     @IBOutlet var authorizedMenu: NSMenu!
-    @IBOutlet var unauthorizedMenu: NSMenu!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let isProcessTrusted = AXIsProcessTrusted()
         NSLog("applicationDidFinishLaunching. AXIsProcessTrusted: \(isProcessTrusted)")
+
+        if !isProcessTrusted {
+            showWelcomeWindowWhenUnauthorized()
+            return
+        }
         
-        StatusBarItem.instance.statusMenu = isProcessTrusted ? authorizedMenu : unauthorizedMenu
-        StatusBarItem.instance.refreshVisibility()
-        checkLaunchOnLogin()
-        
-        if isProcessTrusted {
+        if SettingService.shared.isShowWelcomeWindow {
+            showWelcomeWindow()
+        }
+
+        if SettingService.shared.isEnable {
             MouseHookService.shared.start()
         }
+
+        setupStatusBarItem()
+        checkLaunchOnLogin()
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -49,7 +57,11 @@ extension AppDelegate {
     @IBAction func toggleIsEnable(_ item: NSMenuItem) {
         SettingService.shared.toggleIsEnable()
     }
-    
+
+    private func setupStatusBarItem() {
+        StatusBarItem.instance.statusMenu = authorizedMenu
+        StatusBarItem.instance.refreshVisibility()
+    }
     
     /// 自動起動時の処理
     // NOTE: Rectangleより.
@@ -66,6 +78,24 @@ extension AppDelegate {
         if SettingService.shared.isLaunchOnLogin {
             SettingService.shared.setEnableLaunchOnLogin(enabled: true)
         }
+    }
+
+    private func showWelcomeWindowWhenUnauthorized() {
+        self.showWindowController(identifier: "WelcomWindowWhenUnauthorized")
+    }
+
+    private func showWelcomeWindow() {
+        self.showWindowController(identifier: "WelcomWindow")
+    }
+    
+    private func showWindowController(identifier: String) {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: identifier) as? NSWindowController
+        windowController?.showWindow(self)
+        
+        // Windowが他のアプリに隠れるのを回避するために必要。
+        // https://stackoverflow.com/questions/1740412/how-to-bring-nswindow-to-front-and-to-the-current-space
+        NSApplication.shared.activate(ignoringOtherApps: true)
     }
 }
 

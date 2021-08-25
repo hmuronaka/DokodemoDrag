@@ -677,7 +677,6 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DokodemoDrag" customModuleProvider="target">
                     <connections>
                         <outlet property="authorizedMenu" destination="ajO-tZ-lK0" id="JyY-qJ-Sq2"/>
-                        <outlet property="unauthorizedMenu" destination="IVD-bH-DOJ" id="xCn-C6-weZ"/>
                     </connections>
                 </customObject>
                 <menu id="ajO-tZ-lK0" userLabel="Authorized Menu">
@@ -709,57 +708,259 @@
                         </menuItem>
                     </items>
                 </menu>
-                <menu id="IVD-bH-DOJ" userLabel="Unauthorized Menu">
-                    <items>
-                        <menuItem title="Please allow accessibility and then restart" id="K52-zn-oTo">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                        </menuItem>
-                        <menuItem isSeparatorItem="YES" id="Lbc-bY-f7y"/>
-                        <menuItem title="Quit DokodemoDrag" keyEquivalent="q" id="c5f-D6-j83">
-                            <connections>
-                                <action selector="terminate:" target="hnw-xV-0zn" id="TGL-vP-LmB"/>
-                            </connections>
-                        </menuItem>
-                    </items>
-                </menu>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
         <!--Window Controller-->
-        <scene sceneID="R2V-B0-nI4">
+        <scene sceneID="aa3-BF-Suj">
             <objects>
-                <windowController storyboardIdentifier="MainWindow" id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                <windowController storyboardIdentifier="WelcomWindow" id="V1h-oB-pCU" sceneMemberID="viewController">
+                    <window key="window" title="Welcom to DokodemoDrag" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="EnU-eC-YYn">
+                        <windowStyleMask key="styleMask" titled="YES"/>
+                        <rect key="contentRect" x="1070" y="612" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+                        <view key="contentView" id="yuT-9Z-wib">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                    </window>
+                    <connections>
+                        <segue destination="kVu-vU-Etk" kind="relationship" relationship="window.shadowedContentViewController" id="n5M-U4-rqi"/>
+                    </connections>
+                </windowController>
+                <customObject id="vhU-tP-MM5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="250"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="xqS-Uy-wrm">
+            <objects>
+                <windowController storyboardIdentifier="WelcomWindowWhenUnauthorized" id="aSz-Kj-o37" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Plx-Mt-5PQ">
+                        <windowStyleMask key="styleMask" titled="YES"/>
+                        <rect key="contentRect" x="425" y="462" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+                        <view key="contentView" id="gGW-4Y-TKl">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
                         <connections>
-                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                            <outlet property="delegate" destination="aSz-Kj-o37" id="d72-CI-tmx"/>
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="fK0-yT-qWn" kind="relationship" relationship="window.shadowedContentViewController" id="Bj8-6Y-66Q"/>
                     </connections>
                 </windowController>
-                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="dhU-nt-Jpk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="1261" y="250"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <!--Welcom to DokodemoDrag-->
+        <scene sceneID="Udo-s5-MXF">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="DokodemoDrag" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController title="Welcom to DokodemoDrag" storyboardIdentifier="WelcomeWindowEnableAccessibility" id="fK0-yT-qWn" sceneMemberID="viewController">
+                    <view key="view" id="Yem-Z0-clX">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-t4-frh">
+                                <rect key="frame" x="87" y="241" width="276" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="PAa-JT-bNb"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Welcome to DokodemoDrag" id="UbU-PV-9Wt">
+                                    <font key="font" textStyle="title1" name=".SFNS-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rNC-pW-ku2">
+                                <rect key="frame" x="41" y="139" width="368" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="iFc-Cd-8d4"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" id="HDP-m5-VxX">
+                                    <font key="font" textStyle="body" name=".SFNS-Regular"/>
+                                    <string key="title">In order to use this app, please open [System Preferences]-
+[Security and Privacy],  then [Privacy]-[Accessibility], 
+and enable this app, and then restart this app.</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="R3s-OB-Ghd">
+                                <rect key="frame" x="195" y="85" width="60" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8Kg-x8-i1y"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HkN-jO-2Is">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="terminate:" target="pdJ-7F-IGs" id="raR-7H-z17"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rNC-pW-ku2" firstAttribute="top" secondItem="Zo7-t4-frh" secondAttribute="bottom" constant="31" id="6LV-Dv-beo"/>
+                            <constraint firstItem="Zo7-t4-frh" firstAttribute="top" secondItem="Yem-Z0-clX" secondAttribute="top" constant="28" id="OXp-HD-f0R"/>
+                            <constraint firstItem="Zo7-t4-frh" firstAttribute="centerX" secondItem="Yem-Z0-clX" secondAttribute="centerX" id="Rtt-0O-Pt8"/>
+                            <constraint firstItem="rNC-pW-ku2" firstAttribute="centerX" secondItem="Yem-Z0-clX" secondAttribute="centerX" id="gey-G4-w61"/>
+                            <constraint firstItem="R3s-OB-Ghd" firstAttribute="top" secondItem="rNC-pW-ku2" secondAttribute="bottom" constant="27" id="iQu-rr-xMy"/>
+                            <constraint firstItem="R3s-OB-Ghd" firstAttribute="centerX" secondItem="Yem-Z0-clX" secondAttribute="centerX" id="uEy-jB-HJH"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="pdJ-7F-IGs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="1261" y="703"/>
+        </scene>
+        <!--Welcome to DokodemoDrag(1/2)-->
+        <scene sceneID="Ckx-N1-txr">
+            <objects>
+                <viewController title="Welcome to DokodemoDrag(1/2)" storyboardIdentifier="WelcomeWindowLaunchOnLogin" id="kVu-vU-Etk" customClass="WelcomeViewController" customModule="DokodemoDrag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="UId-eb-l4P">
+                        <rect key="frame" x="0.0" y="0.0" width="454" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ePi-V1-UHt">
+                                <rect key="frame" x="134" y="85" width="52" height="32"/>
+                                <buttonCell key="cell" type="push" title="No" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5OH-rv-j6w">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="disableLaunchOnLogin:" target="kVu-vU-Etk" id="k7p-b2-dlJ"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7JW-rU-FV2">
+                                <rect key="frame" x="260" y="85" width="56" height="32"/>
+                                <buttonCell key="cell" type="push" title="Yes" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0G5-Sn-1Ux">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="enableLaunchOnLogin:" target="kVu-vU-Etk" id="XUQ-uJ-0Bn"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bNK-IJ-7yj">
+                                <rect key="frame" x="20" y="167" width="414" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="tgF-nQ-LnY"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Do you want to enable automatic launch of this app upon OS login?" id="9bk-Uw-7XL">
+                                    <font key="font" textStyle="body" name=".SFNS-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bgu-sM-Ssv">
+                                <rect key="frame" x="23" y="152" width="411" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="2OJ-OP-VXt"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="* This setting can also be changed from the menu in the menu bar." id="stt-rI-MK0">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qgp-to-tyC">
+                                <rect key="frame" x="89" y="244" width="276" height="26"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Welcome to DokodemoDrag" id="F3Y-sI-fgt">
+                                    <font key="font" textStyle="title1" name=".SFNS-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qgp-to-tyC" firstAttribute="centerY" secondItem="UId-eb-l4P" secondAttribute="centerY" constant="-106.5" id="3lT-4U-9Hv"/>
+                            <constraint firstItem="ePi-V1-UHt" firstAttribute="centerX" secondItem="UId-eb-l4P" secondAttribute="centerX" constant="-67" id="5oT-5F-IF4"/>
+                            <constraint firstItem="7JW-rU-FV2" firstAttribute="centerY" secondItem="UId-eb-l4P" secondAttribute="centerY" constant="48" id="5uV-ab-FCF"/>
+                            <constraint firstItem="Bgu-sM-Ssv" firstAttribute="top" secondItem="UId-eb-l4P" secondAttribute="top" constant="132" id="IQZ-If-zXW"/>
+                            <constraint firstItem="Bgu-sM-Ssv" firstAttribute="leading" secondItem="UId-eb-l4P" secondAttribute="leading" constant="25" id="LDf-WO-1Hu"/>
+                            <constraint firstItem="7JW-rU-FV2" firstAttribute="centerX" secondItem="UId-eb-l4P" secondAttribute="centerX" constant="61" id="VGS-8z-h8H"/>
+                            <constraint firstItem="bNK-IJ-7yj" firstAttribute="centerX" secondItem="UId-eb-l4P" secondAttribute="centerX" id="awA-Ij-R0g"/>
+                            <constraint firstItem="bNK-IJ-7yj" firstAttribute="top" secondItem="UId-eb-l4P" secondAttribute="top" constant="107" id="hyJ-TT-hIc"/>
+                            <constraint firstItem="ePi-V1-UHt" firstAttribute="centerY" secondItem="UId-eb-l4P" secondAttribute="centerY" constant="48" id="j1a-sJ-q0q"/>
+                            <constraint firstItem="qgp-to-tyC" firstAttribute="centerX" secondItem="UId-eb-l4P" secondAttribute="centerX" id="oyN-TL-2V9"/>
+                            <constraint firstAttribute="trailing" secondItem="Bgu-sM-Ssv" secondAttribute="trailing" constant="22" id="ywV-Pv-qPo"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="pageIdentifier" value="WelcomeWindowLaunchOnLogin"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <customObject id="DYR-ss-q4Q" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="689"/>
+        </scene>
+        <!--Welcome to DokodemoDrag(1/2)-->
+        <scene sceneID="x7y-D4-Ffa">
+            <objects>
+                <viewController title="Welcome to DokodemoDrag(1/2)" storyboardIdentifier="WelcomeWindowHowToUse" id="zQx-h0-JvE" customClass="WelcomeViewController" customModule="DokodemoDrag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Zqq-C2-QFd">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XTE-v9-GlS">
+                                <rect key="frame" x="166" y="246" width="118" height="26"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="How to Use" id="cYG-xY-XKE">
+                                    <font key="font" textStyle="title1" name=".SFNS-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gNL-7r-0Ct">
+                                <rect key="frame" x="191" y="85" width="69" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="itr-zr-3ab"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hZI-1Z-lBY">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="close:" target="zQx-h0-JvE" id="wsD-DR-bqs"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S7s-Cr-EKb">
+                                <rect key="frame" x="27" y="119" width="396" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="4Do-35-WRE"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="2kl-pS-O5t">
+                                    <font key="font" metaFont="system"/>
+                                    <string key="title">Move the window:
+  Drag the window while holding down  the Command key.
+
+Resize the window:
+  Drag the window while holding down  the Command + Shift key.
+</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gNL-7r-0Ct" firstAttribute="centerX" secondItem="Zqq-C2-QFd" secondAttribute="centerX" id="DnV-nB-uD4"/>
+                            <constraint firstItem="XTE-v9-GlS" firstAttribute="centerX" secondItem="Zqq-C2-QFd" secondAttribute="centerX" id="Kpe-f7-8aF"/>
+                            <constraint firstItem="XTE-v9-GlS" firstAttribute="top" secondItem="Zqq-C2-QFd" secondAttribute="top" constant="28" id="LCf-eH-7ft"/>
+                            <constraint firstItem="gNL-7r-0Ct" firstAttribute="top" secondItem="S7s-Cr-EKb" secondAttribute="bottom" constant="7" id="aIU-Zo-Oou"/>
+                            <constraint firstItem="S7s-Cr-EKb" firstAttribute="centerX" secondItem="Zqq-C2-QFd" secondAttribute="centerX" id="bn8-ks-oUD"/>
+                            <constraint firstItem="S7s-Cr-EKb" firstAttribute="top" secondItem="XTE-v9-GlS" secondAttribute="bottom" constant="31" id="ea5-C7-U9E"/>
+                            <constraint firstItem="gNL-7r-0Ct" firstAttribute="centerX" secondItem="Zqq-C2-QFd" secondAttribute="centerX" id="g0d-H8-9y1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="CFg-KK-Axv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="1092"/>
         </scene>
     </scenes>
 </document>
