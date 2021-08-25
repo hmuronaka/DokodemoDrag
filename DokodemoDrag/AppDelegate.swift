@@ -18,15 +18,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let isProcessTrusted = AXIsProcessTrusted()
         NSLog("applicationDidFinishLaunching. AXIsProcessTrusted: \(isProcessTrusted)")
+
+        if !isProcessTrusted {
+            showWelcomeWindowWhenUnauthorized()
+            return
+        }
         
         StatusBarItem.instance.statusMenu = isProcessTrusted ? authorizedMenu : unauthorizedMenu
         StatusBarItem.instance.refreshVisibility()
         checkLaunchOnLogin()
         
         MouseHookService.shared.start()
-        if !isProcessTrusted {
-            showWelcomeWindowWhenUnauthorized()
-        }
+
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
