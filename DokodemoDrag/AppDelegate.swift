@@ -26,11 +26,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if SettingService.shared.isShowWelcomeWindow {
             showWelcomeWindow()
         }
-        
+
+        if SettingService.shared.isEnable {
+            MouseHookService.shared.start()
+        }
+
         StatusBarItem.instance.statusMenu = authorizedMenu
         StatusBarItem.instance.refreshVisibility()
         checkLaunchOnLogin()
-        MouseHookService.shared.start()
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
