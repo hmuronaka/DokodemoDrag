@@ -83,6 +83,10 @@ extension AppDelegate {
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
         let windowController = storyboard.instantiateController(withIdentifier: "WelcomWindow") as? NSWindowController
         windowController?.showWindow(self)
+        
+        // Windowが他のアプリに隠れるのを回避するために必要。
+        // https://stackoverflow.com/questions/1740412/how-to-bring-nswindow-to-front-and-to-the-current-space
+        NSApplication.shared.activate(ignoringOtherApps: true)
     }
 }
 
