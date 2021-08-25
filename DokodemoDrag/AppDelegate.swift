@@ -31,8 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             MouseHookService.shared.start()
         }
 
-        StatusBarItem.instance.statusMenu = authorizedMenu
-        StatusBarItem.instance.refreshVisibility()
+        setupStatusBarItem()
         checkLaunchOnLogin()
         
     }
@@ -58,7 +57,11 @@ extension AppDelegate {
     @IBAction func toggleIsEnable(_ item: NSMenuItem) {
         SettingService.shared.toggleIsEnable()
     }
-    
+
+    private func setupStatusBarItem() {
+        StatusBarItem.instance.statusMenu = authorizedMenu
+        StatusBarItem.instance.refreshVisibility()
+    }
     
     /// 自動起動時の処理
     // NOTE: Rectangleより.
