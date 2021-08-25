@@ -20,7 +20,7 @@ macOS version 11.2+
 
 # インストールと初回起動方法
 
-1. GitHubのこのリポジトリからアプリの入った[zipファイルをダウンロード](https://github.com/hmuronaka/DokodemoDrag/releases/download/0.1/DokodemoDrag.app.zip)します。
+1. GitHubのこのリポジトリからアプリの入った[zipファイルをダウンロード](https://github.com/hmuronaka/DokodemoDrag/releases/download/0.2/DokodemoDrag.app.zip)します。
 2. zipファイルを解凍して、DokodemoDrag.appをApplicationフォルダに移動します。
 3. FinderのApplicationから右クリックでDokodemoDragを起動します(起動するとメニューバー右上にアイコンが表示されます）。
 4. MacOSの[システム環境設定]=>[セキュリティとプラバシー]を開きます。[プライバシー]タブを開き[アクセシビリティ]を選択して、DokodemoDrag.appを有効にします。
@@ -73,6 +73,8 @@ Caps LockキーのアクションをCommandに変更すると使いやすくな�
 - [「ログイン時に起動」を実装する](https://questbeat.hatenablog.jp/entry/2014/04/19/123207)
 - [macOS Cocoa Appでマウス操作を常に受け取る](https://www.shujima.work/entry/2019/07/07/132138)
 - [ステータスバー常駐アプリ](http://saokkk.seesaa.net/article/443713479.html)
+
+※ ログイン時の自動起動はcodesign等の兼ね合いから、[sindresorhus/LaunchAtLogin](https://github.com/sindresorhus/LaunchAtLogin)の利用を検討した方が良いかもしれません。
 
 また開発する過程で同機能のアプリの存在も知ったので、参考までに記載します。
 
