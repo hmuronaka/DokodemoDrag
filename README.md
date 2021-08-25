@@ -31,8 +31,6 @@ macOS version 11.2 +
 5. Click the icon on the menu bar to close the application.
 6. Start the DokodemoDrag.app from the application again.
 
-Thereafter, it will start automatically when the OS is logged in.
-
 # How to Uninstall
 
 Remove DokodemoDrag.app from Finder under Applications.
