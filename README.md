@@ -1,7 +1,7 @@
 DokodemoDrag
 =====================
 
-[日本語のREADME](./docs/README\_JP.md)
+[README(日本語)](./docs/README\_JP.md)
 
 ----
 
