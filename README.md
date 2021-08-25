@@ -18,6 +18,10 @@ It is very easy to use, as shown below.
 |Move the window|Place the mouse cursor anywhere in the window and drag it with the mouse while holding down the Command key.|
 |Resize the window|Place the mouse cursor anywhere in the Window and drag the mouse while holding down Command+Shift.|
 
+# Requirements
+
+Mac OS version 11.2 +
+
 # How to install and start up for the first time 
 
 1. [Download the zip file](https://github.com/hmuronaka/DokodemoDrag/releases/download/0.1/DokodemoDrag.app.zip) containing the app from this repository. 
