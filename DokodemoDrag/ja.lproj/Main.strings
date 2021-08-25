@@ -45,7 +45,8 @@
 "5Vv-lz-BsD.title" = "Copy Style";
 
 /* Class = "NSMenuItem"; title = "About DokodemoDrag"; ObjectID = "5kV-Vb-QxS"; */
-"5kV-Vb-QxS.title" = "About DokodemoDrag";
+"5kV-Vb-QxS.title" = "DokodemoDragについて";
+"AVf-CH-lhv.title" = "DokodemoDragについて";
 
 /* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
 "6dh-zS-Vam.title" = "Redo";
