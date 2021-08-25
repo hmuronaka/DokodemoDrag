@@ -13,6 +13,7 @@
 		D6210EFF26CDFB7A00DEF70A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6210EFD26CDFB7A00DEF70A /* Main.storyboard */; };
 		D6210F0B26CDFB7A00DEF70A /* DokodemoDragTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F0A26CDFB7A00DEF70A /* DokodemoDragTests.swift */; };
 		D6210F1626CDFB7A00DEF70A /* DokodemoDragUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F1526CDFB7A00DEF70A /* DokodemoDragUITests.swift */; };
+		D6371C1526D6252A002AFF38 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6371C1426D6252A002AFF38 /* WelcomeViewController.swift */; };
 		D63A957226D12F8800F2E2BC /* MouseHookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63A957126D12F8800F2E2BC /* MouseHookService.swift */; };
 		D65F84D726D4B1420082D05A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D65F84D926D4B1420082D05A /* Localizable.strings */; };
 		D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */; };
@@ -67,6 +68,7 @@
 		D6210F1126CDFB7A00DEF70A /* DokodemoDragUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DokodemoDragUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6210F1526CDFB7A00DEF70A /* DokodemoDragUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokodemoDragUITests.swift; sourceTree = "<group>"; };
 		D6210F1726CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6371C1426D6252A002AFF38 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D63A957126D12F8800F2E2BC /* MouseHookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookService.swift; sourceTree = "<group>"; };
 		D65F84D126D4AD860082D05A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		D65F84D826D4B1420082D05A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */,
 				D6D8BA3126D0941800F0D9EF /* SettingService.swift */,
 				D63A957126D12F8800F2E2BC /* MouseHookService.swift */,
+				D6371C1426D6252A002AFF38 /* WelcomeViewController.swift */,
 			);
 			path = DokodemoDrag;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */,
 				D6F9F30D26CF95DF00F254BD /* StatusBarItem.swift in Sources */,
 				D6210EF826CDFB7900DEF70A /* AppDelegate.swift in Sources */,
+				D6371C1526D6252A002AFF38 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
