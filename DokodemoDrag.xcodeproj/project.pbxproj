@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D6210EF826CDFB7900DEF70A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210EF726CDFB7900DEF70A /* AppDelegate.swift */; };
-		D6210EFA26CDFB7900DEF70A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210EF926CDFB7900DEF70A /* ViewController.swift */; };
 		D6210EFC26CDFB7A00DEF70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6210EFB26CDFB7A00DEF70A /* Assets.xcassets */; };
 		D6210EFF26CDFB7A00DEF70A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6210EFD26CDFB7A00DEF70A /* Main.storyboard */; };
 		D6210F0B26CDFB7A00DEF70A /* DokodemoDragTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6210F0A26CDFB7A00DEF70A /* DokodemoDragTests.swift */; };
@@ -57,7 +56,6 @@
 /* Begin PBXFileReference section */
 		D6210EF426CDFB7900DEF70A /* DokodemoDrag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DokodemoDrag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6210EF726CDFB7900DEF70A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6210EF926CDFB7900DEF70A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6210EFB26CDFB7A00DEF70A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6210EFE26CDFB7A00DEF70A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6210F0026CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 			children = (
 				D65F84D226D4AFAD0082D05A /* Resources */,
 				D6210EF726CDFB7900DEF70A /* AppDelegate.swift */,
-				D6210EF926CDFB7900DEF70A /* ViewController.swift */,
 				D6210EFB26CDFB7A00DEF70A /* Assets.xcassets */,
 				D6210EFD26CDFB7A00DEF70A /* Main.storyboard */,
 				D6210F0026CDFB7A00DEF70A /* Info.plist */,
@@ -320,7 +317,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D8BA3226D0941800F0D9EF /* SettingService.swift in Sources */,
-				D6210EFA26CDFB7900DEF70A /* ViewController.swift in Sources */,
 				D63A957226D12F8800F2E2BC /* MouseHookService.swift in Sources */,
 				D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */,
 				D6F9F30D26CF95DF00F254BD /* StatusBarItem.swift in Sources */,
