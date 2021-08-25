@@ -20,7 +20,7 @@ It is very easy to use, as shown below.
 
 # Requirements
 
-Mac OS version 11.2 +
+macOS version 11.2 +
 
 # How to install and start up for the first time 
 
