@@ -2,7 +2,7 @@
 //  SettingService.swift
 //  DokodemoDrag
 //
-//  Created by MuronakaHiroaki on 2021/08/21.
+//  Created by Hiroaki Muronaka on 2021/08/21.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  DokodemoDrag
 //
-//  Created by MuronakaHiroaki on 2021/08/19.
+//  Created by Hiroaki Muronaka on 2021/08/19.
 //
 
 import Cocoa

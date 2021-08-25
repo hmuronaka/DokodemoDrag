@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  DokodemoDragLauncher
 //
-//  Created by MuronakaHiroaki on 2021/08/20.
+//  Created by Hiroaki Muronaka on 2021/08/20.
 //
 
 import Cocoa
