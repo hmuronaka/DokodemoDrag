@@ -695,6 +695,13 @@
                             </connections>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="zhC-QQ-oKL"/>
+                        <menuItem title="About DokodemoDrag" id="AVf-CH-lhv">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="SZN-mO-nu4"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="SoW-gg-RPN"/>
                         <menuItem title="Quit DokodemoDrag" keyEquivalent="q" id="vm1-dR-C61">
                             <connections>
                                 <action selector="terminate:" target="hnw-xV-0zn" id="o8U-7r-P0B"/>
