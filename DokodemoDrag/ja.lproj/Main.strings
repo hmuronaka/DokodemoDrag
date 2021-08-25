@@ -1,4 +1,7 @@
 
+/* Class = "NSButtonCell"; title = "Yes"; ObjectID = "0G5-Sn-1Ux"; */
+"0G5-Sn-1Ux.title" = "はい";
+
 /* Class = "NSMenuItem"; title = "Customize Toolbar…"; ObjectID = "1UK-8n-QPP"; */
 "1UK-8n-QPP.title" = "Customize Toolbar…";
 
@@ -13,6 +16,9 @@
 
 /* Class = "NSMenuItem"; title = "Raise"; ObjectID = "2h7-ER-AoG"; */
 "2h7-ER-AoG.title" = "Raise";
+
+/* Class = "NSTextFieldCell"; title = "Move the window:\n  Drag the window while holding down  the Command key.\n\nResize the window:\n  Drag the window while holding down  the Command + Shift key.\n"; ObjectID = "2kl-pS-O5t"; */
+"2kl-pS-O5t.title" = "ウィンドウの移動:\n    Cmdを押しながらウィンドウをドラッグします。\n\nウィンドウのリサイズ: \n    Cmd+Shiftを押しながらウィンドウをドラッグします。";
 
 /* Class = "NSMenuItem"; title = "Transformations"; ObjectID = "2oI-Rn-ZJC"; */
 "2oI-Rn-ZJC.title" = "Transformations";
@@ -38,6 +44,9 @@
 /* Class = "NSMenuItem"; title = "Quit DokodemoDrag"; ObjectID = "4sb-4s-VLi"; */
 "4sb-4s-VLi.title" = "Quit DokodemoDrag";
 
+/* Class = "NSButtonCell"; title = "No"; ObjectID = "5OH-rv-j6w"; */
+"5OH-rv-j6w.title" = "いいえ";
+
 /* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
 "5QF-Oa-p0T.title" = "Edit";
 
@@ -46,7 +55,6 @@
 
 /* Class = "NSMenuItem"; title = "About DokodemoDrag"; ObjectID = "5kV-Vb-QxS"; */
 "5kV-Vb-QxS.title" = "DokodemoDragについて";
-"AVf-CH-lhv.title" = "DokodemoDragについて";
 
 /* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
 "6dh-zS-Vam.title" = "Redo";
@@ -57,11 +65,17 @@
 /* Class = "NSMenu"; title = "Writing Direction"; ObjectID = "8mr-sm-Yjd"; */
 "8mr-sm-Yjd.title" = "Writing Direction";
 
+/* Class = "NSTextFieldCell"; title = "Do you want to enable automatic launch of this app upon OS login?"; ObjectID = "9bk-Uw-7XL"; */
+"9bk-Uw-7XL.title" = "OSログイン時に自動起動しますか？";
+
 /* Class = "NSMenuItem"; title = "Substitutions"; ObjectID = "9ic-FL-obx"; */
 "9ic-FL-obx.title" = "Substitutions";
 
 /* Class = "NSMenuItem"; title = "Smart Copy/Paste"; ObjectID = "9yt-4B-nSM"; */
 "9yt-4B-nSM.title" = "Smart Copy/Paste";
+
+/* Class = "NSMenuItem"; title = "About DokodemoDrag"; ObjectID = "AVf-CH-lhv"; */
+"AVf-CH-lhv.title" = "DokodemoDragについて";
 
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "Main Menu";
@@ -75,7 +89,7 @@
 /* Class = "NSMenuItem"; title = "Save As…"; ObjectID = "Bw7-FT-i3A"; */
 "Bw7-FT-i3A.title" = "Save As…";
 
-/* Class = "NSMenuItem"; title = "isLaunchOnLogin"; ObjectID = "CBD-uR-x03"; */
+/* Class = "NSMenuItem"; title = "Launch on login"; ObjectID = "CBD-uR-x03"; */
 "CBD-uR-x03.title" = "ログイン時に起動する";
 
 /* Class = "NSMenuItem"; title = "Close"; ObjectID = "DVo-aG-piG"; */
@@ -83,6 +97,9 @@
 
 /* Class = "NSMenuItem"; title = "Spelling and Grammar"; ObjectID = "Dv1-io-Yv7"; */
 "Dv1-io-Yv7.title" = "Spelling and Grammar";
+
+/* Class = "NSWindow"; title = "Welcom to DokodemoDrag"; ObjectID = "EnU-eC-YYn"; */
+"EnU-eC-YYn.title" = "DokodemoDragへようこそ";
 
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
 "F2S-fz-NVQ.title" = "Help";
@@ -114,11 +131,17 @@
 /* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
 "H8h-7b-M4v.title" = "View";
 
+/* Class = "NSTextFieldCell"; title = "In order to use this app, please open [System Preferences]-\n[Security and Privacy],  then [Privacy]-[Accessibility], and enable this app."; ObjectID = "HDP-m5-VxX"; */
+"HDP-m5-VxX.title" = "アプリを利用するために[システム環境設定]-\n[セキュリティーとプライバシー]を開き、[プライバシー]-[アクセシビリティー]から\nこのアプリを有効にしてください。";
+
 /* Class = "NSMenuItem"; title = "Text Replacement"; ObjectID = "HFQ-gK-NFA"; */
 "HFQ-gK-NFA.title" = "Text Replacement";
 
 /* Class = "NSMenuItem"; title = "Show Spelling and Grammar"; ObjectID = "HFo-cy-zxI"; */
 "HFo-cy-zxI.title" = "Show Spelling and Grammar";
+
+/* Class = "NSButtonCell"; title = "Next"; ObjectID = "HkN-jO-2Is"; */
+"HkN-jO-2Is.title" = "次へ";
 
 /* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
 "HyV-fh-RgO.title" = "View";
@@ -137,6 +160,9 @@
 
 /* Class = "NSMenuItem"; title = "Use None"; ObjectID = "J7y-lM-qPV"; */
 "J7y-lM-qPV.title" = "Use None";
+
+/* Class = "NSMenuItem"; title = "Please allow accessibility and then restart"; ObjectID = "K52-zn-oTo"; */
+"K52-zn-oTo.title" = "アクセシビリティを許可してからアプリを再起動してください。";
 
 /* Class = "NSMenuItem"; title = "Revert to Saved"; ObjectID = "KaW-ft-85H"; */
 "KaW-ft-85H.title" = "Revert to Saved";
@@ -207,6 +233,9 @@
 /* Class = "NSMenuItem"; title = "Capitalize"; ObjectID = "UEZ-Bs-lqG"; */
 "UEZ-Bs-lqG.title" = "Capitalize";
 
+/* Class = "NSTextFieldCell"; title = "Welcome to DokodemoDrag"; ObjectID = "UbU-PV-9Wt"; */
+"UbU-PV-9Wt.title" = "DokodemoDragへようこそ";
+
 /* Class = "NSMenuItem"; title = "Center"; ObjectID = "VIY-Ag-zcb"; */
 "VIY-Ag-zcb.title" = "Center";
 
@@ -267,11 +296,17 @@
 /* Class = "NSMenuItem"; title = "Use Selection for Find"; ObjectID = "buJ-ug-pKt"; */
 "buJ-ug-pKt.title" = "Use Selection for Find";
 
+/* Class = "NSMenuItem"; title = "Quit DokodemoDrag"; ObjectID = "c5f-D6-j83"; */
+"c5f-D6-j83.title" = "終了する";
+
 /* Class = "NSMenu"; title = "Transformations"; ObjectID = "c8a-y6-VQd"; */
 "c8a-y6-VQd.title" = "Transformations";
 
 /* Class = "NSMenuItem"; title = "Use None"; ObjectID = "cDB-IK-hbR"; */
 "cDB-IK-hbR.title" = "Use None";
+
+/* Class = "NSTextFieldCell"; title = "How to Use"; ObjectID = "cYG-xY-XKE"; */
+"cYG-xY-XKE.title" = "使い方";
 
 /* Class = "NSMenuItem"; title = "Selection"; ObjectID = "cqv-fj-IhA"; */
 "cqv-fj-IhA.title" = "Selection";
@@ -291,11 +326,17 @@
 /* Class = "NSMenuItem"; title = "Undo"; ObjectID = "dRJ-4n-Yzg"; */
 "dRJ-4n-Yzg.title" = "Undo";
 
+/* Class = "NSViewController"; title = "Welcom to DokodemoDrag(1/3)"; ObjectID = "fK0-yT-qWn"; */
+"fK0-yT-qWn.title" = "DokodemoDragへようこそ(1/3)";
+
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
 "gVA-U4-sdL.title" = "Paste";
 
 /* Class = "NSMenuItem"; title = "Smart Quotes"; ObjectID = "hQb-2v-fYv"; */
 "hQb-2v-fYv.title" = "Smart Quotes";
+
+/* Class = "NSButtonCell"; title = "Close"; ObjectID = "hZI-1Z-lBY"; */
+"hZI-1Z-lBY.title" = "閉じる";
 
 /* Class = "NSMenuItem"; title = "Check Document Now"; ObjectID = "hz2-CU-CR7"; */
 "hz2-CU-CR7.title" = "Check Document Now";
@@ -320,6 +361,9 @@
 
 /* Class = "NSMenuItem"; title = "Show Sidebar"; ObjectID = "kIP-vf-haE"; */
 "kIP-vf-haE.title" = "Show Sidebar";
+
+/* Class = "NSViewController"; title = "Welcome to DokodemoDrag(2/3)"; ObjectID = "kVu-vU-Etk"; */
+"kVu-vU-Etk.title" = "DokodemoDragへようこそ(2/3)";
 
 /* Class = "NSMenuItem"; title = "Check Grammar With Spelling"; ObjectID = "mK6-2p-4JG"; */
 "mK6-2p-4JG.title" = "Check Grammar With Spelling";
@@ -354,6 +398,9 @@
 /* Class = "NSMenuItem"; title = "Show Toolbar"; ObjectID = "snW-S8-Cw5"; */
 "snW-S8-Cw5.title" = "Show Toolbar";
 
+/* Class = "NSTextFieldCell"; title = "* This setting can also be changed from the menu in the menu bar."; ObjectID = "stt-rI-MK0"; */
+"stt-rI-MK0.title" = "* この設定は、後でメニューバーのメニューからも設定できます。";
+
 /* Class = "NSMenuItem"; title = "Data Detectors"; ObjectID = "tRr-pd-1PS"; */
 "tRr-pd-1PS.title" = "Data Detectors";
 
@@ -380,7 +427,6 @@
 
 /* Class = "NSMenuItem"; title = "Quit WindowMover"; ObjectID = "vm1-dR-C61"; */
 "vm1-dR-C61.title" = "終了する";
-"c5f-D6-j83.title" = "終了する";
 
 /* Class = "NSMenuItem"; title = "Make Upper Case"; ObjectID = "vmV-6d-7jI"; */
 "vmV-6d-7jI.title" = "Make Upper Case";
@@ -406,4 +452,5 @@
 /* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "z6F-FW-3nz"; */
 "z6F-FW-3nz.title" = "Show Substitutions";
 
-"K52-zn-oTo.title" = "アクセシビリティを許可してからアプリを再起動してください。";
+/* Class = "NSViewController"; title = "Welcome to DokodemoDrag(3/3)"; ObjectID = "zQx-h0-JvE"; */
+"zQx-h0-JvE.title" = "DokodemoDragへようこそ(3/3)";

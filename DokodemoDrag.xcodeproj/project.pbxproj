@@ -70,7 +70,7 @@
 		D6210F1726CDFB7A00DEF70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6371C1426D6252A002AFF38 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D63A957126D12F8800F2E2BC /* MouseHookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookService.swift; sourceTree = "<group>"; };
-		D65F84D126D4AD860082D05A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		D652542426D6374C007815C2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		D65F84D826D4B1420082D05A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
 		D683DA9F26CF614D00B2B162 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
@@ -365,7 +365,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D6210EFE26CDFB7A00DEF70A /* Base */,
-				D65F84D126D4AD860082D05A /* ja */,
+				D652542426D6374C007815C2 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
