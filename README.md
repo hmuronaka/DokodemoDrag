@@ -24,7 +24,7 @@ macOS version 11.2 +
 
 # How to install and start up for the first time 
 
-1. [Download the zip file](https://github.com/hmuronaka/DokodemoDrag/releases/download/0.1/DokodemoDrag.app.zip) containing the app from this repository. 
+1. [Download the zip file](https://github.com/hmuronaka/DokodemoDrag/releases/download/0.2/DokodemoDrag.app.zip) containing the app from this repository. 
 2. Unzip the zip file and move DokodemoDrag.app to the Application folder.
 3. Open Finder and right-click on Application to launch DokodemoDrag (the icon will appear in the menu bar when launched).
 4. In MacOS, go to [System Preferences]=>[Security and Privacy]. Open the [Privacy] tab and select [Accessibility] to enable DokodemoDrag.app.
