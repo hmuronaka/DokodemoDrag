@@ -67,7 +67,7 @@ class SettingService {
 }
 
 fileprivate extension Defaults.Keys {
-    static let isLaunchOnLogin = Key<Bool>("isLaunchOnLogin", default: true)
+    static let isLaunchOnLogin = Key<Bool>("isLaunchOnLogin", default: false)
     static let isEnable = Key<Bool>("isEnable", default: true)
     static let isShowWelcomeWindow = Key<Bool>("isShowWelcomeWindow", default: true)
 }
