@@ -26,7 +26,9 @@ macOS version 11.2+
 
 1. GitHubのこのリポジトリからアプリの入った[zipファイルをダウンロード](https://github.com/hmuronaka/DokodemoDrag/releases/download/0.2/DokodemoDrag.app.zip)します。
 2. zipファイルを解凍して、DokodemoDrag.appをApplicationフォルダに移動します。
-3. FinderのApplicationから右クリックでDokodemoDragを起動します(起動するとメニューバー右上にアイコンが表示されます）。
+3. FinderのApplicationから右クリックでDokodemoDragを起動します(起動するとメニューバー右上にアイコンが表示されます）。<br>
+   　※開発中のため、MacのGatekeeperに検出されます。([参考: Mac で App を安全に開く](https://support.apple.com/ja-jp/HT202491))
+     
 4. MacOSの[システム環境設定]=>[セキュリティとプラバシー]を開きます。[プライバシー]タブを開き[アクセシビリティ]を選択して、DokodemoDrag.appを有効にします。
 
 <img src="https://github.com/hmuronaka/DokodemoDrag/blob/images/docs/images/jp/privacy_accessibility.png" width="400px">
