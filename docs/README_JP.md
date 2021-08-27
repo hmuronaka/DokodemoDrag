@@ -3,7 +3,7 @@ DokodemoDrag
 
 [README(英語)](../README.md)
 
-[実装の概要(zenn.devに飛びます)](https://zenn.dev/articles/4c17afaaf5012e/edit)
+[実装の概要(zenn.devに飛びます)](https://zenn.dev/hmu/articles/4c17afaaf5012e)
 
 ----
 
