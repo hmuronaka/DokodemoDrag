@@ -62,13 +62,33 @@ class MouseHookService {
                     self.element = nil
                 })
             }
-        } else if let elem = self.element,  event.type == .leftMouseDragged {
-            if event.modifierFlags.contains([.command, .shift]), let size = elem.getSize() {
-                elem.set(size: .init(width: size.width + event.deltaX, height: size.height + event.deltaY))
-            } else if event.modifierFlags.contains(.command), let pos = elem.getPosition() {
-                elem.set(position: .init(x: pos.x + event.deltaX, y: pos.y + event.deltaY))
+        } else if event.type == .leftMouseDragged {
+            if event.modifierFlags.contains([.command, .shift]){
+                self.resizeElement(event)
+            } else if event.modifierFlags.contains(.command) {
+                self.moveElement(event)
             }
         }
+    }
+
+    
+    /// mouseの移動量に基づいて要素をresizeする
+    /// - Parameter event: mouseイベント
+    private func resizeElement(_ event: NSEvent) {
+        guard let elem = self.element, let size = elem.getSize() else {
+            return
+        }
+        elem.set(size: .init(width: size.width + event.deltaX, height: size.height + event.deltaY))
+    }
+    
+    
+    /// mouseの移動量に基づいて要素を移動する。
+    /// - Parameter event: mouseイベント
+    private func moveElement(_ event: NSEvent) {
+        guard let elem = self.element, let pos = elem.getPosition() else {
+            return
+        }
+        elem.set(position: .init(x: pos.x + event.deltaX, y: pos.y + event.deltaY))
     }
 
     
