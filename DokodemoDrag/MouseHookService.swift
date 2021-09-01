@@ -16,6 +16,10 @@ class MouseHookService {
     
     // ダブルクリックを検出するためのタイマー
     private var timerForDoubleClick: Timer?
+    
+    private var isRunningTimerForDoubleClick: Bool {
+        return timerForDoubleClick != nil
+    }
 
     private init() {
 
@@ -47,22 +51,17 @@ class MouseHookService {
             self.element = AccessibilityElement.windowUnderCursor()
         } else if event.type == .leftMouseUp {
             // double-clickを検出した.
-            if let timer = timerForDoubleClick {
-                
+            if isRunningTimerForDoubleClick {
+                stopTimerForDoubleClick()
                 // double-clickされたwindowをセンタリングする
-                timer.invalidate()
-                self.timerForDoubleClick = nil
                 self.moveElementToCenterOnScreen(event)
                 self.element = nil
             // single-clickを検出
             } else {
-                // double-click検出用タイマーを開始する
-                timerForDoubleClick = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { t in
-                    self.timerForDoubleClick = nil
-                    self.element = nil
-                })
+                startTimerForDoubleClick()
             }
         } else if event.type == .leftMouseDragged {
+            stopTimerForDoubleClick()
             if event.modifierFlags.contains([.command, .shift]){
                 self.resizeElement(event)
             } else if event.modifierFlags.contains(.command) {
@@ -70,7 +69,22 @@ class MouseHookService {
             }
         }
     }
-
+    
+    
+    private func startTimerForDoubleClick() {
+        timerForDoubleClick?.invalidate()
+        
+        // double-click検出用タイマーを開始する
+        timerForDoubleClick = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { t in
+            self.timerForDoubleClick = nil
+            self.element = nil
+        })
+    }
+    
+    private func stopTimerForDoubleClick() {
+        self.timerForDoubleClick?.invalidate()
+        self.timerForDoubleClick = nil
+    }
     
     /// mouseの移動量に基づいて要素をresizeする
     /// - Parameter event: mouseイベント
