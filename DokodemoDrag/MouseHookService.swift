@@ -13,6 +13,9 @@ class MouseHookService {
     
     private var element: AccessibilityElement?
     private var eventMonitor: Any?
+    
+    // ダブルクリックを検出するためのタイマー
+    private var timerForDoubleClick: Timer?
 
     private init() {
 
@@ -43,7 +46,22 @@ class MouseHookService {
         if event.type == .leftMouseDown {
             self.element = AccessibilityElement.windowUnderCursor()
         } else if event.type == .leftMouseUp {
-            self.element = nil
+            // double-clickを検出した.
+            if let timer = timerForDoubleClick {
+                
+                // double-clickされたwindowをセンタリングする
+                timer.invalidate()
+                self.timerForDoubleClick = nil
+                self.moveElementToCenterOnScreen(event)
+                self.element = nil
+            // single-clickを検出
+            } else {
+                // double-click検出用タイマーを開始する
+                timerForDoubleClick = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { t in
+                    self.timerForDoubleClick = nil
+                    self.element = nil
+                })
+            }
         } else if let elem = self.element,  event.type == .leftMouseDragged {
             if event.modifierFlags.contains([.command, .shift]), let size = elem.getSize() {
                 elem.set(size: .init(width: size.width + event.deltaX, height: size.height + event.deltaY))
@@ -51,6 +69,20 @@ class MouseHookService {
                 elem.set(position: .init(x: pos.x + event.deltaX, y: pos.y + event.deltaY))
             }
         }
+    }
+
+    
+    /// eventのマウスカーソルの位置のWindowをセンタリングする
+    /// - Parameter event: マウスイベント
+    private func moveElementToCenterOnScreen(_ event: NSEvent) {
+        // 画面サイズを取得する
+        guard let frame = NSScreen.main?.frame, let elem = self.element, let elemSize = elem.getSize() else {
+            return
+        }
+        let center = CGPoint(x: frame.width * 0.5, y: frame.height * 0.5)
+        let leftTop = CGPoint(x: center.x - elemSize.width * 0.5, y: center.y - elemSize.height * 0.5)
+        elem.set(position: leftTop)
+        elem.bringToFront()
     }
 
 }
