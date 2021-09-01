@@ -17,6 +17,7 @@ It is very easy to use, as shown below.
 |:---|:---|
 |Move the window|Place the mouse cursor anywhere in the window and drag it with the mouse while holding down the Command key.|
 |Resize the window|Place the mouse cursor anywhere in the Window and drag the mouse while holding down Command+Shift.|
+|Center the window<br>(The funcion under experimentation)|Place the mouse cursor anywhere in the Window and double-click with down the Command key.|
 
 # Requirements
 
