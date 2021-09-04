@@ -121,8 +121,7 @@ class MouseHookService {
         default:
             newSize =  CGSize(width: size.width + event.deltaX, height: size.height + event.deltaY)
         }
-        elem.set(size: newSize)
-        elem.set(position: newPosition)
+        elem.setRectOf(CGRect(origin: newPosition, size: newSize))
     }
     
     
@@ -153,14 +152,19 @@ class MouseHookService {
     /// 記録する
     /// - Parameter event: mouse event
     private func updateQuadrant(_ event: NSEvent) {
-        guard let size = self.element?.getSize(), let position = self.element?.getPosition() else {
+        guard let size = self.element?.getSize(), let position = self.element?.getPosition(), let screen = NSScreen.main else {
             return
         }
+        
+        // 左上が(0, 0)の座標系
         let center = CGPoint(x: position.x + size.width * 0.5, y: position.y + size.height * 0.5)
+        // 左下が(0, 0)の座標系
+        // NOTE: event.locationInWindow == NSEvent.mouseLocation と言う結果になる
         let location = event.locationInWindow
         
         let x = location.x >= center.x
-        let y = location.y >= center.y
+        // 座標系の変換方法を調べきれていないため、screenの高さを用いて、マウスのy座標を左上が(0,0)になるようにしている。
+        let y = screen.visibleFrame.height - location.y <= center.y
         quadrant = x ?
             (y ? 1 : 4) :
             (y ? 2 : 3)
