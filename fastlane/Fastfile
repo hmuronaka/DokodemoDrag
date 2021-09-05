@@ -1,0 +1,74 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:mac)
+
+XCODE_PROJ_PATH = %w(./DokodemoDragLauncher/DokodemoDragLauncher.xcodeproj ./DokodemoDrag.xcodeproj)
+BUILD_PATH="build"
+APP_NAME="DokodemoDrag.app"
+
+platform :mac do
+
+  desc "release. option version: 0.3.0 ..."
+  lane :release do |options|
+      set_version_number(
+        version_number: options[:version_number]
+      )
+      increment_all_app_build_numbers
+      build
+  end
+
+
+  desc "set version number"
+  lane :set_version_number do |options|
+    XCODE_PROJ_PATH.each do |path|
+      increment_version_number(
+        xcodeproj: "#{path}",
+        version_number: options[:version_number]
+      )
+    end
+  end
+
+  desc "increment all app's build_numbers"
+  lane :increment_all_app_build_numbers do
+    #NOTE increment_build_numberだと主のprojectしかbuild_numberが更新されないようなので、
+    #     全てのprojectのbuild_numberを更新する。
+    XCODE_PROJ_PATH.each do |path|
+      increment_build_number(
+        xcodeproj: "#{path}"
+      )
+    end
+  end
+
+  desc "build and zip app-file"
+  lane :build do
+    build_mac_app(
+      workspace: "DokodemoDrag.xcworkspace",
+      configuration: "Release",
+      scheme: "DokodemoDrag",
+      export_method: "development",
+      clean: true,
+      output_directory: BUILD_PATH,
+      skip_package_pkg: true,
+      output_name: APP_NAME
+    )
+
+    zip(
+      path: "#{BUILD_PATH}/#{APP_NAME}",
+      output_path: "#{APP_NAME}.zip"
+    )
+
+  end
+end
