@@ -1,0 +1,61 @@
+name: Release app
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs: 
+      version_number: 
+        description: '入力例 ex 0.3.0 , 0.3.1., 0.4.0. v#{version}というタグも生成する'
+        required: true
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  release:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: git config
+        run: |
+          echo github.actor: ${{github.actor}}
+          git config user.name ${{github.actor}}
+          
+      - name: Build DokodemoDragLauncher & DokodemoDrag
+        run: |
+          fastlane release version_number:${{github.event.inputs.version_number}}
+          # git add .
+          # git commit -m "release v${{github.event.inputs.version_number}}"
+          # git push origin main
+          
+      - name: Create git tag
+        run: |
+          echo Create tag ${{github.event.inputs.version_number}}
+          git tag v${{github.event.inputs.version_number}}
+          git push origin v${{github.inputs.version_number}}
+          
+      - name: Create release    
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: v${{github.event.inputs.version_number}}
+          release_name: Release v${{github.event.inputs.version_number}}
+          body: |
+            Changes in this Release
+            - First Change
+            - Second Change
+          draft: true,
+          prerelease: true
+          
+      - name: Upload Release Assets
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./DokodemoDrag.app.zip
+          asset_name: DokodemoDrag.app.zip
+          asset_content_type: application/zip          
