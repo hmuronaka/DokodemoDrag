@@ -17,27 +17,14 @@ jobs:
       - uses: actions/checkout@v2
       
       # https://docs.github.com/ja/actions/guides/installing-an-apple-certificate-on-macos-runners-for-xcode-development
-      - name: Install the Apple certificate and provisioning profile
+      - name: Generate p12 file
         env:
           BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
-          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
-          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: |
-          # 変数を作成する
-          CERTIFICATE_PATH=$RUNNER_TEMP/build_certificate.p12
-          KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
+          P12_PATH=$RUNNER_TEMP/build_certificate.p12
 
           # シークレットから証明書とプロビジョニングプロファイルをインポートする
-          echo -n "$BUILD_CERTIFICATE_BASE64" | base64 --decode --output $CERTIFICATE_PATH
-
-          # 一時的なキーチェーンを作成する
-          security create-keychain -p $KEYCHAIN_PASSWORD $KEYCHAIN_PATH
-          security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
-          security unlock-keychain -p $KEYCHAIN_PASSWORD $KEYCHAIN_PATH
-
-          # キーチェーンに証明書をインポートする
-          security import $CERTIFICATE_PATH -P $P12_PASSWORD -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
-          security list-keychain -d user -s $KEYCHAIN_PATH
+          echo -n "$BUILD_CERTIFICATE_BASE64" | base64 --decode --output $P12_PATH
      
       - name: git config
         run: |
@@ -45,7 +32,11 @@ jobs:
           git config user.name ${{github.actor}}
           
       - name: Build DokodemoDragLauncher & DokodemoDrag
+        env:
+          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: |
+          P12_PATH=$RUNNER_TEMP/build_certificate.p12
           fastlane release version_number:${{github.event.inputs.version_number}}
           # git add .
           # git commit -m "release v${{github.event.inputs.version_number}}"
@@ -82,8 +73,3 @@ jobs:
           asset_path: ./DokodemoDrag.app.zip
           asset_name: DokodemoDrag.app.zip
           asset_content_type: application/zip          
-          
-      - name: Clean up keychain and provisioning profile
-        if: ${{ always() }}
-        run: |
-         security delete-keychain $RUNNER_TEMP/app-signing.keychain-db
