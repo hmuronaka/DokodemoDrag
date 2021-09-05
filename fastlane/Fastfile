@@ -18,8 +18,17 @@ default_platform(:mac)
 XCODE_PROJ_PATH = %w(./DokodemoDragLauncher/DokodemoDragLauncher.xcodeproj ./DokodemoDrag.xcodeproj)
 BUILD_PATH="build"
 APP_NAME="DokodemoDrag.app"
+KEYCHAIN_NAME="map_app_keychain"
 
 platform :mac do
+  
+  after_all do |lane|
+    delete_keychain(name: KEYCHAIN_NAME)
+  end
+  
+  error do |lane|
+    delete_keychain(name: KEYCHAIN_NAME)
+  end
 
   desc "release. option version: 0.3.0 ..."
   lane :release do |options|
@@ -54,6 +63,8 @@ platform :mac do
 
   desc "build and zip app-file"
   lane :build do
+    import_certificate
+    
     build_mac_app(
       workspace: "DokodemoDrag.xcworkspace",
       configuration: "Release",
@@ -71,4 +82,23 @@ platform :mac do
     )
 
   end
+ 
+  # Github Action側でcertificateをimportしてもbuildエラーになるので、
+  # fastlane側でのimportを試す。
+  # 参考: https://note.com/hayabusabusa/n/nbf4a1a095bf5
+  private_lane :import_certificate do
+    create_keychain(
+      name: KEYCHAIN_NAME,
+      password: ENV["KEYCHAIN_PASSWORD"],
+      timeout: 1800
+    )
+    import_certificate(
+      certificate_path: ENV["CERTIFICATE_PATH"],
+      certificate_password: ENV["CERTIFICATE_PASSWORD"],
+      keychain_name: KEYCHAIN_NAME,
+      keychain_password: ENV["KEYCHAIN_PASSWORD"]
+    )
+  end
+  
+  
 end
