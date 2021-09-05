@@ -82,3 +82,8 @@ jobs:
           asset_path: ./DokodemoDrag.app.zip
           asset_name: DokodemoDrag.app.zip
           asset_content_type: application/zip          
+          
+      - name: Clean up keychain and provisioning profile
+        if: ${{ always() }}
+        run: |
+         security delete-keychain $RUNNER_TEMP/app-signing.keychain-db
