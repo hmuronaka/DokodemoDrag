@@ -74,7 +74,7 @@ jobs:
             - First Change
             - Second Change
           draft: true
-          prerelease: true
+          prerelease: false
           
       - name: Upload Release Assets
         id: upload-release-asset
