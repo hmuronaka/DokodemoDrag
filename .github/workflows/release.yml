@@ -35,6 +35,10 @@ jobs:
           echo github.actor: ${{github.actor}}
           git config user.name ${{github.actor}}
           
+      - name: bundle install
+        run: |
+          bundle install
+          
       - name: Build DokodemoDragLauncher & DokodemoDrag
         env:
           P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
