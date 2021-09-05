@@ -14,6 +14,9 @@ jobs:
   release:
     runs-on: macos-latest
     steps:
+      - name: Show Xcode version
+        run: xcodebuild -version    
+        
       - uses: actions/checkout@v2
       
       # https://docs.github.com/ja/actions/guides/installing-an-apple-certificate-on-macos-runners-for-xcode-development
@@ -22,6 +25,7 @@ jobs:
           BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
         run: |
           P12_PATH=$RUNNER_TEMP/build_certificate.p12
+          echo $P12_PATH
 
           # シークレットから証明書とプロビジョニングプロファイルをインポートする
           echo -n "$BUILD_CERTIFICATE_BASE64" | base64 --decode --output $P12_PATH
@@ -37,6 +41,7 @@ jobs:
           KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: |
           export P12_PATH=$RUNNER_TEMP/build_certificate.p12
+          echo $P12_PATH
           fastlane release version_number:${{github.event.inputs.version_number}}
           # git add .
           # git commit -m "release v${{github.event.inputs.version_number}}"
