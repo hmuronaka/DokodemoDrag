@@ -93,8 +93,8 @@ platform :mac do
       timeout: 1800
     )
     import_certificate(
-      certificate_path: ENV["CERTIFICATE_PATH"],
-      certificate_password: ENV["CERTIFICATE_PASSWORD"],
+      certificate_path: ENV["P12_PATH"],
+      certificate_password: ENV["P12_PASSWORD"],
       keychain_name: KEYCHAIN_NAME,
       keychain_password: ENV["KEYCHAIN_PASSWORD"]
     )
