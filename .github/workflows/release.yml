@@ -36,7 +36,7 @@ jobs:
           P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
           KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: |
-          P12_PATH=$RUNNER_TEMP/build_certificate.p12
+          export P12_PATH=$RUNNER_TEMP/build_certificate.p12
           fastlane release version_number:${{github.event.inputs.version_number}}
           # git add .
           # git commit -m "release v${{github.event.inputs.version_number}}"
