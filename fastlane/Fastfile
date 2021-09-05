@@ -63,7 +63,7 @@ platform :mac do
 
   desc "build and zip app-file"
   lane :build do
-    import_certificate
+    import_my_certificate
     
     build_mac_app(
       workspace: "DokodemoDrag.xcworkspace",
@@ -86,7 +86,7 @@ platform :mac do
   # Github Action側でcertificateをimportしてもbuildエラーになるので、
   # fastlane側でのimportを試す。
   # 参考: https://note.com/hayabusabusa/n/nbf4a1a095bf5
-  private_lane :import_certificate do
+  private_lane :import_my_certificate do
     create_keychain(
       name: KEYCHAIN_NAME,
       password: ENV["KEYCHAIN_PASSWORD"],
