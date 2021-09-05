@@ -17,7 +17,11 @@ jobs:
       - name: Show Xcode version
         run: xcodebuild -version    
         
+      # defaultでWorkflowを実行したbranchがcheckoutされる。
       - uses: actions/checkout@v2
+
+      - name: Show Git Branch
+        run: git symbolic-ref --short HEAD
       
       # https://docs.github.com/ja/actions/guides/installing-an-apple-certificate-on-macos-runners-for-xcode-development
       - name: Generate p12 file
@@ -47,9 +51,9 @@ jobs:
           export P12_PATH=$RUNNER_TEMP/build_certificate.p12
           echo $P12_PATH
           bundle exec fastlane release version_number:${{github.event.inputs.version_number}}
-          # git add .
-          # git commit -m "release v${{github.event.inputs.version_number}}"
-          # git push origin main
+          git add .
+          git commit -m "Release v${{github.event.inputs.version_number}}"
+          git push origin
           
       - name: Create git tag
         run: |
