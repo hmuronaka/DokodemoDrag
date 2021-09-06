@@ -19,6 +19,7 @@ XCODE_PROJ_PATH = %w(./DokodemoDragLauncher/DokodemoDragLauncher.xcodeproj ./Dok
 BUILD_PATH="build"
 APP_NAME="DokodemoDrag.app"
 KEYCHAIN_NAME="map_app_keychain"
+OUTPUT_PATH="build"
 
 platform :mac do
   
@@ -78,7 +79,7 @@ platform :mac do
 
     zip(
       path: "#{BUILD_PATH}/#{APP_NAME}",
-      output_path: "#{APP_NAME}.zip"
+      output_path: "#{OUTPUT_PATH}/#{APP_NAME}.zip"
     )
 
   end
