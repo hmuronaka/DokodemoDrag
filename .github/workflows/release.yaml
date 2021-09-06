@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs: 
       version_number: 
-        description: '入力例 ex 0.3.0 , 0.3.1., 0.4.0. v#{version}というタグも生成する'
+        description: 'アプリのバージョン番号。入力例 0.3.0, 1.0.0 など。'
         required: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
