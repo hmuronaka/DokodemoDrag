@@ -21,7 +21,7 @@ It is very easy to use, as shown below.
 
 # Requirements
 
-macOS version 11.2 +
+macOS version 11.0 +
 
 # How to install and start up for the first time 
 1. [Download the zip file](https://github.com/hmuronaka/DokodemoDrag/releases/download/0.3/DokodemoDrag.app.zip) containing the app from this repository. 
