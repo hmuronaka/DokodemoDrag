@@ -7,6 +7,10 @@ on:
       version_number: 
         description: 'アプリのバージョン番号。入力例 0.3.0, 1.0.0 など。'
         required: true
+      is_create_tag:
+        description: 'タグを作成するかどうか。true以外の時作成しない。'
+        required: false
+        default: false
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -56,6 +60,7 @@ jobs:
           git push origin
           
       - name: Create git tag
+        if: ${{ github.event.inputs.is_create_tag == "true" }}
         run: |
           echo Create tag ${{github.event.inputs.version_number}}
           git tag v${{github.event.inputs.version_number}}
@@ -68,8 +73,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
           TAG_NAME: v${{github.event.inputs.version_number}}  
         with:
-          tag_name: ${{env.TAG_NAME}}
-          release_name: Release ${{env.TAG_NAME}}
+          tag_name: ${{ github.event.inputs.is_create_tag == "true" && env.TAG_NAME }}
+          release_name: ${{ github.event.inputs.is_create_tag == "true" && 'Release $TAG_NAME' }}
           body: |
             Changes in this Release
             - First Change
