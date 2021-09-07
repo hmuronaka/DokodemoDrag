@@ -164,7 +164,7 @@ class MouseHookService {
         
         let x = location.x >= center.x
         // 座標系の変換方法を調べきれていないため、screenの高さを用いて、マウスのy座標を左上が(0,0)になるようにしている。
-        let y = screen.visibleFrame.height - location.y <= center.y
+        let y = screen.frame.height - location.y <= center.y
         quadrant = x ?
             (y ? 1 : 4) :
             (y ? 2 : 3)
