@@ -17,10 +17,10 @@ jobs:
   # This workflow contains a single job called "build"
   release:
     runs-on: macos-latest
-    steps:
-      env: 
-        TAG_NAME: v${{github.event.inputs.version_number}}  
+    env: 
+      TAG_NAME: v${{github.event.inputs.version_number}}  
 
+    steps:
       - name: Show Xcode version
         run: xcodebuild -version    
         
@@ -59,7 +59,7 @@ jobs:
           echo $P12_PATH
           bundle exec fastlane release version_number:${{github.event.inputs.version_number}}
           git add .
-          git commit -m "Release ${{ env.TAG_NAME }}"
+          git commit -m "${{ (github.event.inputs.is_create_tag == 'true' && format('Release {0}', env.TAG_NAME)) || 'GitHub Actions build' }}"
           git push origin
           
       - name: Create git tag
@@ -75,8 +75,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
+          # tag_nameは必須なので、タグを作らない時はfalseというtag_nameとする。
           tag_name: ${{ github.event.inputs.is_create_tag == 'true' && env.TAG_NAME }}
-          release_name: ${{ github.event.inputs.is_create_tag == 'true' && 'Release $TAG_NAME' }}
+          release_name: Release ${{ env.TAG_NAME }}
           body: |
             Changes in this Release
             - First Change
