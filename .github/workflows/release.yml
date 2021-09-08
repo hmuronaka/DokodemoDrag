@@ -60,7 +60,7 @@ jobs:
           echo $P12_PATH
           bundle exec fastlane release version_number:${{github.event.inputs.version_number}}
           git add .
-          git commit -m "${{ (github.event.inputs.is_create_tag == 'true' && format('Release {0}', env.TAG_NAME)) || 'GitHub Actions build' }}"
+          git commit -m "${{ (github.event.inputs.is_create_tag == 'true' && format('Release {0}', env.TAG_NAME)) || format('GitHub Actions built v{0} for test', github.event.inputs.version_number) }}"
           git push origin
           
       - name: Create git tag
