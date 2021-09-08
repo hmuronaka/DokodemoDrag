@@ -7,12 +7,19 @@ on:
       version_number: 
         description: 'アプリのバージョン番号。入力例 0.3.0, 1.0.0 など。'
         required: true
+      enable_commit:
+        description: 'commitするかどうか。true以外の時commitしない。'
+        required: false
+        default: "false"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   release:
     runs-on: macos-latest
+    env: 
+      TAG_NAME: v${{github.event.inputs.version_number}}  
+
     steps:
       - name: Show Xcode version
         run: xcodebuild -version    
@@ -38,6 +45,7 @@ jobs:
         run: |
           echo github.actor: ${{github.actor}}
           git config user.name ${{github.actor}}
+          git config user.email ${{ secrets.AUTHOR_EMAIL }}
           
       - name: bundle install
         run: |
@@ -51,15 +59,20 @@ jobs:
           export P12_PATH=$RUNNER_TEMP/build_certificate.p12
           echo $P12_PATH
           bundle exec fastlane release version_number:${{github.event.inputs.version_number}}
+
+      - name: Commit
+        if: ${{ github.event.inputs.enable_commit == 'true' }}
+        run: |
           git add .
-          git commit -m "Release v${{github.event.inputs.version_number}}"
+          git commit -m "${{ format('Release {0}', env.TAG_NAME) }}"
           git push origin
           
       - name: Create git tag
+        if: ${{ github.event.inputs.enable_commit == 'true' }}
         run: |
           echo Create tag ${{github.event.inputs.version_number}}
-          git tag v${{github.event.inputs.version_number}}
-          git push origin v${{github.event.inputs.version_number}}
+          git tag ${{ env.TAG_NAME }}
+          git push origin ${{ env.TAG_NAME }}
           
       - name: Create release    
         id: create_release
@@ -67,8 +80,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: v${{github.event.inputs.version_number}}
-          release_name: Release v${{github.event.inputs.version_number}}
+          # tag_nameは必須なので、タグを作らない時はfalseというtag_nameとする。
+          tag_name: ${{ github.event.inputs.enable_commit == 'true' && env.TAG_NAME }}
+          release_name: Release ${{ env.TAG_NAME }}
           body: |
             Changes in this Release
             - First Change
