@@ -7,8 +7,8 @@ on:
       version_number: 
         description: 'アプリのバージョン番号。入力例 0.3.0, 1.0.0 など。'
         required: true
-      is_create_tag:
-        description: 'タグを作成するかどうか。true以外の時作成しない。'
+      enable_commit:
+        description: 'commitするかどうか。true以外の時commitしない。'
         required: false
         default: "false"
 
@@ -59,12 +59,16 @@ jobs:
           export P12_PATH=$RUNNER_TEMP/build_certificate.p12
           echo $P12_PATH
           bundle exec fastlane release version_number:${{github.event.inputs.version_number}}
+
+      - name: Commit
+        if: ${{ github.event.inputs.enable_commit == 'true' }}
+        run: |
           git add .
-          git commit -m "${{ (github.event.inputs.is_create_tag == 'true' && format('Release {0}', env.TAG_NAME)) || format('GitHub Actions built v{0} for test', github.event.inputs.version_number) }}"
+          git commit -m "${{ format('Release {0}', env.TAG_NAME) }}"
           git push origin
           
       - name: Create git tag
-        if: ${{ github.event.inputs.is_create_tag == 'true' }}
+        if: ${{ github.event.inputs.enable_commit == 'true' }}
         run: |
           echo Create tag ${{github.event.inputs.version_number}}
           git tag ${{ env.TAG_NAME }}
@@ -77,7 +81,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
           # tag_nameは必須なので、タグを作らない時はfalseというtag_nameとする。
-          tag_name: ${{ github.event.inputs.is_create_tag == 'true' && env.TAG_NAME }}
+          tag_name: ${{ github.event.inputs.enable_commit == 'true' && env.TAG_NAME }}
           release_name: Release ${{ env.TAG_NAME }}
           body: |
             Changes in this Release
