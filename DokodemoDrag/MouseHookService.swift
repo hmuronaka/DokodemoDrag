@@ -167,19 +167,13 @@ class MouseHookService {
         guard let size = self.element?.getSize(), let position = self.element?.getPosition(), let screen = NSScreen.main else {
             return
         }
-        
         // 左上が(0, 0)の座標系
-        let center = CGPoint(x: position.x + size.width * 0.5, y: position.y + size.height * 0.5)
+        let rect = CGRect(origin: position, size: size)
         // 左下が(0, 0)の座標系
         // NOTE: event.locationInWindow == NSEvent.mouseLocation と言う結果になる
         let location = event.locationInWindow
-        
-        let x = location.x >= center.x
         // 座標系の変換方法を調べきれていないため、screenの高さを用いて、マウスのy座標を左上が(0,0)になるようにしている。
-        let y = screen.frame.height - location.y <= center.y
-        quadrant = x ?
-            (y ? 1 : 4) :
-            (y ? 2 : 3)
+        self.quadrant = rect.quardrant(point: CGPoint(x: location.x, y: screen.frame.height - location.y))
     }
     
 

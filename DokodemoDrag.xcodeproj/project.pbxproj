@@ -15,6 +15,7 @@
 		D6371C1526D6252A002AFF38 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6371C1426D6252A002AFF38 /* WelcomeViewController.swift */; };
 		D63A957226D12F8800F2E2BC /* MouseHookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63A957126D12F8800F2E2BC /* MouseHookService.swift */; };
 		D65F84D726D4B1420082D05A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D65F84D926D4B1420082D05A /* Localizable.strings */; };
+		D679F15026EA4B3500C3838A /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D679F14F26EA4B3500C3838A /* CGRectExtensions.swift */; };
 		D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */; };
 		D69DAD4C26D39128000E529D /* DokodemoDragLauncher.app in Resources */ = {isa = PBXBuildFile; fileRef = D69DAD4B26D39128000E529D /* DokodemoDragLauncher.app */; };
 		D69DAD4D26D39136000E529D /* DokodemoDragLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = D69DAD4B26D39128000E529D /* DokodemoDragLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -70,6 +71,7 @@
 		D63A957126D12F8800F2E2BC /* MouseHookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookService.swift; sourceTree = "<group>"; };
 		D652542626D67961007815C2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		D65F84D826D4B1420082D05A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D679F14F26EA4B3500C3838A /* CGRectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
 		D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
 		D683DA9F26CF614D00B2B162 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		D69DAD4B26D39128000E529D /* DokodemoDragLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = DokodemoDragLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 		D6210EF626CDFB7900DEF70A /* DokodemoDrag */ = {
 			isa = PBXGroup;
 			children = (
+				D679F14E26EA4B1700C3838A /* Extensions */,
 				D65F84D226D4AFAD0082D05A /* Resources */,
 				D6210EF726CDFB7900DEF70A /* AppDelegate.swift */,
 				D6210EFB26CDFB7A00DEF70A /* Assets.xcassets */,
@@ -166,6 +169,14 @@
 				D65F84D926D4B1420082D05A /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D679F14E26EA4B1700C3838A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D679F14F26EA4B3500C3838A /* CGRectExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D683DA9E26CF614D00B2B162 /* Frameworks */ = {
@@ -318,6 +329,7 @@
 			files = (
 				D6D8BA3226D0941800F0D9EF /* SettingService.swift in Sources */,
 				D63A957226D12F8800F2E2BC /* MouseHookService.swift in Sources */,
+				D679F15026EA4B3500C3838A /* CGRectExtensions.swift in Sources */,
 				D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */,
 				D6F9F30D26CF95DF00F254BD /* StatusBarItem.swift in Sources */,
 				D6210EF826CDFB7900DEF70A /* AppDelegate.swift in Sources */,
