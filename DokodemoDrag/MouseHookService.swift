@@ -164,11 +164,10 @@ class MouseHookService {
     /// 記録する
     /// - Parameter event: mouse event
     private func updateQuadrant(_ event: NSEvent) {
-        guard let size = self.element?.getSize(), let position = self.element?.getPosition(), let screen = NSScreen.main else {
+        // elemRect: 左上が(0, 0)の座標系
+        guard let rect = self.element?.rectOfElement(), let screen = NSScreen.main else {
             return
         }
-        // 左上が(0, 0)の座標系
-        let rect = CGRect(origin: position, size: size)
         // 左下が(0, 0)の座標系
         // NOTE: event.locationInWindow == NSEvent.mouseLocation と言う結果になる
         let location = event.locationInWindow
