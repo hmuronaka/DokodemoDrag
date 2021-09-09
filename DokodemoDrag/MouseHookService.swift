@@ -121,7 +121,19 @@ class MouseHookService {
         default:
             newSize =  CGSize(width: size.width + event.deltaX, height: size.height + event.deltaY)
         }
-        elem.setRectOf(CGRect(origin: newPosition, size: newSize))
+        
+        elem.set(size: newSize)
+        // windowは最小sizeがある場合があるので、resizeしてwidthかheightが変わらなかった場合、
+        // window位置を移動しないようにする。
+        if let resizedSize = elem.getSize() {
+            if resizedSize.width == size.width {
+                newPosition.x = position.x
+            }
+            if resizedSize.height == size.height {
+                newPosition.y = position.y
+            }
+            elem.set(position: newPosition)
+        }
     }
     
     
