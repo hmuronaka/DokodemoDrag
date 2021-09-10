@@ -14,18 +14,13 @@ class MouseHookService {
     private var element: AccessibilityElement?
     private var eventMonitor: Any?
     
+    private var recognizers = [Recognizer]()
+    
     /// 象限. マウスクリックした際に、クリックしたウィンドウの中央から見て
     //  第１〜第４象限のどこがクリックされたかを保持する（リサイズの仕方を調整するため）
     // quardrant: 四分儀(象限)
     private var quadrant: Int = 0
     
-    // ダブルクリックを検出するためのタイマー
-    private var timerForDoubleClick: Timer?
-    
-    private var isRunningTimerForDoubleClick: Bool {
-        return timerForDoubleClick != nil
-    }
-
     private init() {
 
     }
@@ -45,30 +40,25 @@ class MouseHookService {
         self.eventMonitor = nil
         self.element = nil
     }
+    
+    public func addRecognizer(_ recognizer: Recognizer) {
+        self.recognizers.append(recognizer)
+    }
 
     private func handleMouseEvent(_ event: NSEvent) {
         guard !event.modifierFlags.intersection([.command, .shift]).isEmpty else {
             self.element = nil
             return
         }
+        
+        for recognizer in recognizers {
+            recognizer.handleMouseEvent(event)
+        }
 
         if event.type == .leftMouseDown {
             self.element = AccessibilityElement.windowUnderCursor()
             updateQuadrant( event )
-        } else if event.type == .leftMouseUp {
-            // double-clickを検出した.
-            if isRunningTimerForDoubleClick {
-                stopTimerForDoubleClick()
-                // double-clickされたwindowをセンタリングする
-                self.element?.moveElementToCenterOnScreen()
-                self.element = nil
-                self.quadrant = 0
-            // single-clickを検出
-            } else {
-                startTimerForDoubleClick()
-            }
         } else if event.type == .leftMouseDragged {
-            stopTimerForDoubleClick()
             if event.modifierFlags.contains([.command, .shift]){
                 self.resizeElement(event)
             } else if event.modifierFlags.contains(.command) {
@@ -76,23 +66,6 @@ class MouseHookService {
             }
         }
     }
-    
-    private func startTimerForDoubleClick() {
-        timerForDoubleClick?.invalidate()
-        
-        // double-click検出用タイマーを開始する
-        timerForDoubleClick = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { t in
-            self.timerForDoubleClick = nil
-            self.element = nil
-            self.quadrant = 0
-        })
-    }
-    
-    private func stopTimerForDoubleClick() {
-        self.timerForDoubleClick?.invalidate()
-        self.timerForDoubleClick = nil
-    }
-    
     /// mouseの移動量に基づいて要素をresizeする
     /// - Parameter event: mouseイベント
     private func resizeElement(_ event: NSEvent) {
