@@ -60,57 +60,12 @@ class MouseHookService {
             updateQuadrant( event )
         } else if event.type == .leftMouseDragged {
             if event.modifierFlags.contains([.command, .shift]){
-                self.resizeElement(event)
+                self.element?.resize(delta: CGPoint(x: event.deltaX, y: event.deltaY), quadrant: self.quadrant)
             } else if event.modifierFlags.contains(.command) {
                 self.element?.move(delta: CGPoint(x: event.deltaX, y: event.deltaY))
             }
         }
     }
-    /// mouseの移動量に基づいて要素をresizeする
-    /// - Parameter event: mouseイベント
-    private func resizeElement(_ event: NSEvent) {
-        guard let elem = self.element, let size = elem.getSize(), let position = elem.getPosition() else {
-            return
-        }
-        var newSize: CGSize = size
-        var newPosition: CGPoint = position
-        // quardrant: 象限
-        switch quadrant {
-        case 1:
-            // Window右上境界をドラッグするresizeと同等の動作。
-            newSize = CGSize(width: size.width + event.deltaX, height: size.height - event.deltaY)
-            newPosition = CGPoint(x: position.x, y: position.y + event.deltaY)
-        case 2:
-            // Window左上境界をドラッグするresizeと同等の動作。
-            newSize = CGSize(width: size.width - event.deltaX, height: size.height - event.deltaY)
-            newPosition = CGPoint(x: position.x + event.deltaX, y: position.y + event.deltaY)
-        case 3:
-            // Window左下境界をドラッグするresizeと同等の動作。
-            newSize = CGSize(width: size.width - event.deltaX, height: size.height + event.deltaY)
-            newPosition = CGPoint(x: position.x + event.deltaX, y: position.y)
-        case 4:
-            // Window右下境界をドラッグするresizeと同等の動作。
-            fallthrough
-        default:
-            newSize =  CGSize(width: size.width + event.deltaX, height: size.height + event.deltaY)
-        }
-        
-        elem.set(size: newSize)
-        // windowは最小sizeがある場合があるので、resizeしてwidthかheightが変わらなかった場合、
-        // window位置を移動しないようにする。
-        if let resizedSize = elem.getSize() {
-            if resizedSize.width == size.width {
-                newPosition.x = position.x
-            }
-            if resizedSize.height == size.height {
-                newPosition.y = position.y
-            }
-            elem.set(position: newPosition)
-        }
-    }
-    
-
-
 
     /// mouse eventからクリックされたウィンドウ上の第１象限〜第４象限のどこがクリックされたかを
     /// 記録する

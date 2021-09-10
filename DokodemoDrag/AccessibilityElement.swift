@@ -351,13 +351,57 @@ extension AccessibilityElement {
     }
     
     /// delta分だけelementを移動する
-    /// - Parameter event: mouseイベント
+    /// - Parameter delta: 移動量
     func move(delta: CGPoint) {
         guard let pos = self.getPosition() else {
             return
         }
         self.set(position: .init(x: pos.x + delta.x, y: pos.y + delta.y))
     }
+    
+    /// mouseの移動量に基づいて要素をresizeする
+    /// - Parameter delta: リサイズ量
+    /// - Parameter quadrant: リサイズ開始時のクリック位置を四分儀で与える。
+    func resize(delta: CGPoint, quadrant: Int) {
+        guard let size = self.getSize(), let position = self.getPosition() else {
+            return
+        }
+        var newSize: CGSize = size
+        var newPosition: CGPoint = position
+        // quardrant: 象限
+        switch quadrant {
+        case 1:
+            // Window右上境界をドラッグするresizeと同等の動作。
+            newSize = CGSize(width: size.width + delta.x, height: size.height - delta.y)
+            newPosition = CGPoint(x: position.x, y: position.y + delta.y)
+        case 2:
+            // Window左上境界をドラッグするresizeと同等の動作。
+            newSize = CGSize(width: size.width - delta.x, height: size.height - delta.y)
+            newPosition = CGPoint(x: position.x + delta.x, y: position.y + delta.y)
+        case 3:
+            // Window左下境界をドラッグするresizeと同等の動作。
+            newSize = CGSize(width: size.width - delta.x, height: size.height + delta.y)
+            newPosition = CGPoint(x: position.x + delta.x, y: position.y)
+        case 4:
+            // Window右下境界をドラッグするresizeと同等の動作。
+            fallthrough
+        default:
+            newSize =  CGSize(width: size.width + delta.x, height: size.height + delta.y)
+        }
+        self.set(size: newSize)
+        // windowは最小sizeがある場合があるので、resizeしてwidthかheightが変わらなかった場合、
+        // window位置を移動しないようにする。
+        if let resizedSize = self.getSize() {
+            if resizedSize.width == size.width {
+                newPosition.x = position.x
+            }
+            if resizedSize.height == size.height {
+                newPosition.y = position.y
+            }
+            self.set(position: newPosition)
+        }
+    }
+
 
     
 }
