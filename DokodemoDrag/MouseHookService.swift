@@ -62,7 +62,7 @@ class MouseHookService {
             if event.modifierFlags.contains([.command, .shift]){
                 self.resizeElement(event)
             } else if event.modifierFlags.contains(.command) {
-                self.moveElement(event)
+                self.element?.move(delta: CGPoint(x: event.deltaX, y: event.deltaY))
             }
         }
     }
@@ -109,17 +109,7 @@ class MouseHookService {
         }
     }
     
-    
-    /// mouseの移動量に基づいて要素を移動する。
-    /// - Parameter event: mouseイベント
-    private func moveElement(_ event: NSEvent) {
-        guard let elem = self.element, let pos = elem.getPosition() else {
-            return
-        }
-        elem.set(position: .init(x: pos.x + event.deltaX, y: pos.y + event.deltaY))
-    }
 
-    
 
 
     /// mouse eventからクリックされたウィンドウ上の第１象限〜第４象限のどこがクリックされたかを

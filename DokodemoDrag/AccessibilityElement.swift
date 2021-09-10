@@ -349,4 +349,15 @@ extension AccessibilityElement {
         self.set(position: leftTop)
         self.bringToFront()
     }
+    
+    /// delta分だけelementを移動する
+    /// - Parameter event: mouseイベント
+    func move(delta: CGPoint) {
+        guard let pos = self.getPosition() else {
+            return
+        }
+        self.set(position: .init(x: pos.x + delta.x, y: pos.y + delta.y))
+    }
+
+    
 }
