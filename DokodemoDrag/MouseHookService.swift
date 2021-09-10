@@ -60,7 +60,7 @@ class MouseHookService {
             if isRunningTimerForDoubleClick {
                 stopTimerForDoubleClick()
                 // double-clickされたwindowをセンタリングする
-                self.moveElementToCenterOnScreen(event)
+                self.element?.moveElementToCenterOnScreen()
                 self.element = nil
                 self.quadrant = 0
             // single-clickを検出
@@ -147,18 +147,7 @@ class MouseHookService {
     }
 
     
-    /// eventのマウスカーソルの位置のWindowをセンタリングする
-    /// - Parameter event: マウスイベント
-    private func moveElementToCenterOnScreen(_ event: NSEvent) {
-        // 画面サイズを取得する
-        guard let frame = NSScreen.main?.frame, let elem = self.element, let elemSize = elem.getSize() else {
-            return
-        }
-        let center = CGPoint(x: frame.width * 0.5, y: frame.height * 0.5)
-        let leftTop = CGPoint(x: center.x - elemSize.width * 0.5, y: center.y - elemSize.height * 0.5)
-        elem.set(position: leftTop)
-        elem.bringToFront()
-    }
+
 
     /// mouse eventからクリックされたウィンドウ上の第１象限〜第４象限のどこがクリックされたかを
     /// 記録する

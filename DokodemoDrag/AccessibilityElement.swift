@@ -336,3 +336,17 @@ extension AXValue {
         return AXValueCreate(type, pointer)
     }
 }
+
+extension AccessibilityElement {
+    /// eventのマウスカーソルの位置のWindowをセンタリングする
+    func moveElementToCenterOnScreen() {
+        // 画面サイズを取得する
+        guard let frame = NSScreen.main?.frame, let elemSize = getSize() else {
+            return
+        }
+        let center = CGPoint(x: frame.width * 0.5, y: frame.height * 0.5)
+        let leftTop = CGPoint(x: center.x - elemSize.width * 0.5, y: center.y - elemSize.height * 0.5)
+        self.set(position: leftTop)
+        self.bringToFront()
+    }
+}
