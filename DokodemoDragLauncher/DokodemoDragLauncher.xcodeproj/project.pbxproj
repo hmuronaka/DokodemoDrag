@@ -440,6 +440,7 @@
 				MARKETING_VERSION = "";
 				PRODUCT_BUNDLE_IDENTIFIER = hmu.DokodemoDragLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -467,6 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hmu.DokodemoDragLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = DokodemoDragLauncher;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
