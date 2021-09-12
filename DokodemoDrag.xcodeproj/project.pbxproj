@@ -133,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				D6F4E89426EB114F004C73DF /* Recognizers */,
-				D6F4E89726EB1189004C73DF /* DoubleClickRecognizer.swift */,
 				D63A957126D12F8800F2E2BC /* MouseHookService.swift */,
 				D679F14E26EA4B1700C3838A /* Extensions */,
 				D65F84D226D4AFAD0082D05A /* Resources */,
@@ -197,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				D6F4E89526EB1164004C73DF /* Recognizer.swift */,
+				D6F4E89726EB1189004C73DF /* DoubleClickRecognizer.swift */,
 			);
 			path = Recognizers;
 			sourceTree = "<group>";
