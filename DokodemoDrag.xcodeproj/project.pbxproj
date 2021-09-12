@@ -15,10 +15,13 @@
 		D6371C1526D6252A002AFF38 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6371C1426D6252A002AFF38 /* WelcomeViewController.swift */; };
 		D63A957226D12F8800F2E2BC /* MouseHookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63A957126D12F8800F2E2BC /* MouseHookService.swift */; };
 		D65F84D726D4B1420082D05A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D65F84D926D4B1420082D05A /* Localizable.strings */; };
+		D679F15026EA4B3500C3838A /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D679F14F26EA4B3500C3838A /* CGRectExtensions.swift */; };
 		D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */; };
 		D69DAD4D26D39136000E529D /* DokodemoDragLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = D69DAD4B26D39128000E529D /* DokodemoDragLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D6D8BA2E26D0932500F0D9EF /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = D6D8BA2D26D0932500F0D9EF /* Defaults */; };
 		D6D8BA3226D0941800F0D9EF /* SettingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D8BA3126D0941800F0D9EF /* SettingService.swift */; };
+		D6F4E89626EB1164004C73DF /* Recognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F4E89526EB1164004C73DF /* Recognizer.swift */; };
+		D6F4E89826EB1189004C73DF /* DoubleClickRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F4E89726EB1189004C73DF /* DoubleClickRecognizer.swift */; };
 		D6F9F30D26CF95DF00F254BD /* StatusBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,10 +72,13 @@
 		D63A957126D12F8800F2E2BC /* MouseHookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseHookService.swift; sourceTree = "<group>"; };
 		D652542626D67961007815C2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		D65F84D826D4B1420082D05A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D679F14F26EA4B3500C3838A /* CGRectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
 		D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
 		D683DA9F26CF614D00B2B162 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		D69DAD4B26D39128000E529D /* DokodemoDragLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = DokodemoDragLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D8BA3126D0941800F0D9EF /* SettingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingService.swift; sourceTree = "<group>"; };
+		D6F4E89526EB1164004C73DF /* Recognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recognizer.swift; sourceTree = "<group>"; };
+		D6F4E89726EB1189004C73DF /* DoubleClickRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleClickRecognizer.swift; sourceTree = "<group>"; };
 		D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +132,9 @@
 		D6210EF626CDFB7900DEF70A /* DokodemoDrag */ = {
 			isa = PBXGroup;
 			children = (
+				D6F4E89426EB114F004C73DF /* Recognizers */,
+				D63A957126D12F8800F2E2BC /* MouseHookService.swift */,
+				D679F14E26EA4B1700C3838A /* Extensions */,
 				D65F84D226D4AFAD0082D05A /* Resources */,
 				D6210EF726CDFB7900DEF70A /* AppDelegate.swift */,
 				D6210EFB26CDFB7A00DEF70A /* Assets.xcassets */,
@@ -135,7 +144,6 @@
 				D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */,
 				D6F9F30C26CF95DF00F254BD /* StatusBarItem.swift */,
 				D6D8BA3126D0941800F0D9EF /* SettingService.swift */,
-				D63A957126D12F8800F2E2BC /* MouseHookService.swift */,
 				D6371C1426D6252A002AFF38 /* WelcomeViewController.swift */,
 			);
 			path = DokodemoDrag;
@@ -167,6 +175,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		D679F14E26EA4B1700C3838A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D679F14F26EA4B3500C3838A /* CGRectExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D683DA9E26CF614D00B2B162 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +190,15 @@
 				D683DA9F26CF614D00B2B162 /* ServiceManagement.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6F4E89426EB114F004C73DF /* Recognizers */ = {
+			isa = PBXGroup;
+			children = (
+				D6F4E89526EB1164004C73DF /* Recognizer.swift */,
+				D6F4E89726EB1189004C73DF /* DoubleClickRecognizer.swift */,
+			);
+			path = Recognizers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,10 +341,13 @@
 			files = (
 				D6D8BA3226D0941800F0D9EF /* SettingService.swift in Sources */,
 				D63A957226D12F8800F2E2BC /* MouseHookService.swift in Sources */,
+				D679F15026EA4B3500C3838A /* CGRectExtensions.swift in Sources */,
+				D6F4E89626EB1164004C73DF /* Recognizer.swift in Sources */,
 				D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */,
 				D6F9F30D26CF95DF00F254BD /* StatusBarItem.swift in Sources */,
 				D6210EF826CDFB7900DEF70A /* AppDelegate.swift in Sources */,
 				D6371C1526D6252A002AFF38 /* WelcomeViewController.swift in Sources */,
+				D6F4E89826EB1189004C73DF /* DoubleClickRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +438,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -474,7 +502,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -504,7 +532,7 @@
 				CODE_SIGN_ENTITLEMENTS = DokodemoDrag/DokodemoDrag.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = DokodemoDrag/Info.plist;
@@ -529,7 +557,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = DokodemoDrag/Info.plist;
@@ -553,7 +581,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
 				INFOPLIST_FILE = DokodemoDragTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -577,7 +605,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
 				INFOPLIST_FILE = DokodemoDragTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -600,7 +628,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
 				INFOPLIST_FILE = DokodemoDragUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,7 +650,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = C3BE3ZYRWA;
 				INFOPLIST_FILE = DokodemoDragUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
