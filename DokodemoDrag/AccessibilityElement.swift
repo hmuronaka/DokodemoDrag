@@ -339,7 +339,7 @@ extension AXValue {
 
 extension AccessibilityElement {
     /// eventのマウスカーソルの位置のWindowをセンタリングする
-    func moveElementToCenterOnScreen() {
+    func moveToCenterOnScreen() {
         // 画面サイズを取得する
         guard let frame = NSScreen.main?.frame, let elemSize = getSize() else {
             return

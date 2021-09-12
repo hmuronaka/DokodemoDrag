@@ -29,7 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         if SettingService.shared.isEnable {
             MouseHookService.shared.addRecognizer( DoubleClickRecognizer().onAction({ event in
-                AccessibilityElement.windowUnderCursor()?.moveElementToCenterOnScreen()
+                AccessibilityElement.windowUnderCursor()?.moveToCenterOnScreen()
             }))
 
             MouseHookService.shared.start()
