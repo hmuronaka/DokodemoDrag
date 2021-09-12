@@ -16,7 +16,6 @@
 		D63A957226D12F8800F2E2BC /* MouseHookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63A957126D12F8800F2E2BC /* MouseHookService.swift */; };
 		D65F84D726D4B1420082D05A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D65F84D926D4B1420082D05A /* Localizable.strings */; };
 		D683DA9D26CF60D300B2B162 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683DA9C26CF60D300B2B162 /* AccessibilityElement.swift */; };
-		D69DAD4C26D39128000E529D /* DokodemoDragLauncher.app in Resources */ = {isa = PBXBuildFile; fileRef = D69DAD4B26D39128000E529D /* DokodemoDragLauncher.app */; };
 		D69DAD4D26D39136000E529D /* DokodemoDragLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = D69DAD4B26D39128000E529D /* DokodemoDragLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D6D8BA2E26D0932500F0D9EF /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = D6D8BA2D26D0932500F0D9EF /* Defaults */; };
 		D6D8BA3226D0941800F0D9EF /* SettingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D8BA3126D0941800F0D9EF /* SettingService.swift */; };
@@ -290,7 +289,6 @@
 			files = (
 				D6210EFC26CDFB7A00DEF70A /* Assets.xcassets in Resources */,
 				D65F84D726D4B1420082D05A /* Localizable.strings in Resources */,
-				D69DAD4C26D39128000E529D /* DokodemoDragLauncher.app in Resources */,
 				D6210EFF26CDFB7A00DEF70A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,7 +526,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DokodemoDrag/DokodemoDrag.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2;
@@ -542,7 +540,7 @@
 				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hmu.DokodemoDrag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = DokodemoDrag;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
