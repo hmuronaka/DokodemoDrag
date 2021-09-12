@@ -7,9 +7,12 @@
 
 import Cocoa
 
+
+/// ダブルクリック専用のrecognizer
 class DoubleClickRecognizer: Recognizer {
     
-    var action: ( (_:NSEvent) -> () )?
+    /// ダブルクリック検出時のcallback
+    private var action: ( (_:NSEvent) -> () )?
     
     // ダブルクリックを検出するためのタイマー
     private var timerForDoubleClick: Timer?
