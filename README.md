@@ -42,7 +42,7 @@ The following settings and operations are available from the menu on the menu ba
 |Menu|Description|
 |:--|:--|
 |Enable / Disable|You can enable/disable the DokodeomoDrag window operation.|
-|Launch on Login|If checked, DokodemoDrag.app will be automatically launched upon OS login (default is checked).|
+|Launch on Login|If checked, DokodemoDrag.app will be automatically launched upon OS login.|
 |Quit|Quit DokodemoDrag.|
 
 # Information used as reference in development
